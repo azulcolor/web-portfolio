@@ -25,24 +25,10 @@ export interface Project {
   image: string;
   technologies: string[];
   featured: boolean;
+  collaboration?: string;
 }
 
 export const PROJECTS: Project[] = [
-  {
-    id: "brasa-y-sal",
-    name: "Brasa y Sal",
-    client: "Restaurante Brasa y Sal",
-    category: "restaurante",
-    categoryLabel: "Restaurante",
-    description:
-      "Sitio web completo para restaurante de mariscos y carnes a las brasas en Tequila, Jalisco. Diseño que transmite la esencia del pueblo mágico con sistema de reservaciones integrado.",
-    impact:
-      "Los clientes ahora pueden ver el menú completo y reservar mesa directamente desde su celular. El restaurante reporta un aumento significativo en reservaciones digitales.",
-    url: "https://restaurantebrasaysal.com/",
-    image: "/images/projects/brasa-y-sal.webp",
-    technologies: ["WordPress", "PHP", "Elementor", "SEO"],
-    featured: true,
-  },
   {
     id: "la-moresca",
     name: "Grupo La Moresca",
@@ -57,6 +43,23 @@ export const PROJECTS: Project[] = [
     image: "/images/projects/la-moresca.webp",
     technologies: ["PHP", "Kirby", "SEO"],
     featured: true,
+    collaboration: "Desarrollo frontend en colaboración estratégica con Agencia Invasivo",
+  },
+    {
+    id: "brasa-y-sal",
+    name: "Brasa y Sal",
+    client: "Restaurante Brasa y Sal",
+    category: "restaurante",
+    categoryLabel: "Restaurante",
+    description:
+      "Sitio web completo para restaurante de mariscos y carnes a las brasas en Tequila, Jalisco. Diseño que transmite la esencia del pueblo mágico con sistema de reservaciones integrado.",
+    impact:
+      "Los clientes ahora pueden ver el menú completo y reservar mesa directamente desde su celular. El restaurante reporta un aumento significativo en reservaciones digitales.",
+    url: "https://restaurantebrasaysal.com/",
+    image: "/images/projects/brasa-y-sal.webp",
+    technologies: ["WordPress", "PHP", "Elementor", "SEO"],
+    featured: true,
+    collaboration: "Desarrollo frontend en colaboración estratégica con Agencia Invasivo",
   },
   {
     id: "kingkoil",
@@ -72,6 +75,7 @@ export const PROJECTS: Project[] = [
     image: "/images/projects/kingkoil.webp",
     technologies: ["WordPress", "PHP", "Elementor", "WooCommerce"],
     featured: true,
+    collaboration: "Desarrollo frontend en colaboración estratégica con Agencia Invasivo",
   },
   {
     id: "conforta",
@@ -86,6 +90,22 @@ export const PROJECTS: Project[] = [
     url: "https://colchonesconforta.com/",
     image: "/images/projects/conforta.webp",
     technologies: ["WordPress", "PHP", "WooCommerce", "Elementor"],
+    featured: true,
+    collaboration: "Desarrollo frontend en colaboración estratégica con Agencia Invasivo",
+  },
+    {
+    id: "invasivo", 
+    name: "Agencia Invasivo",
+    client: "Agencia Invasivo",
+    category: "creativo",
+    categoryLabel: "Agencia Creativa",
+    description:
+      "Portafolio corporativo para agencia de Marketing y SEO. Funciona como su carta de presentación principal, destacando sus casos de éxito y metodología orientada a resultados.",
+    impact:
+      "La agencia fortaleció su autoridad en el ecosistema digital, logrando un escaparate premium para captar clientes B2B de alto perfil y agilizar su prospección.",
+    url: "https://agenciainvasivo.com/",
+    image: "/images/projects/invasivo.webp",
+    technologies: ["WordPress", "PHP", "Elementor", "SEO"],
     featured: true,
   },
   {
@@ -102,6 +122,23 @@ export const PROJECTS: Project[] = [
     image: "/images/projects/pearlstem.webp",
     technologies: ["WordPress", "PHP", "Elementor", "SEO"],
     featured: true,
+    collaboration: "Desarrollo frontend en colaboración estratégica con Agencia Invasivo",
+  },
+  {
+    id: "lea-maquinaria",
+    name: "LEA Maquinaria",
+    client: "LEA Maquinaria y Partes",
+    category: "ecommerce",
+    categoryLabel: "Catálogo Industrial",
+    description:
+      "Catálogo digital corporativo para venta de refacciones y partes de maquinaria pesada. Diseño estructurado para B2B que facilita la búsqueda técnica y cotización ágil.",
+    impact:
+      "Transformó el proceso de ventas B2B, permitiendo a constructoras y operadores encontrar y cotizar refacciones genéricas de forma digital e inmediata.",
+    url: "https://www.leamaquinariaypartes.com/",
+    image: "/images/projects/lea-maquinaria.webp",
+    technologies: ["PHP", "MySql", "SEO"],
+    featured: true,
+    collaboration: "Desarrollo frontend en colaboración estratégica con Agencia Invasivo",
   },
   {
     id: "walter-vera",
@@ -116,19 +153,6 @@ export const PROJECTS: Project[] = [
     url: "https://www.waltervera.com/",
     image: "/images/projects/walter-vera.webp",
     technologies: ["Next.js", "Tailwind CSS", "Vercel"],
-    featured: true,
-  },
-  {
-    id: "invasivo", 
-    name: "Agencia Invasivo",
-    client: "Agencia Invasivo",
-    category: "creativo",
-    categoryLabel: "Agencia Creativa",
-    description: "Información y portafolio de la agencia creativa Invasivo dedicada a marketing, seo y desarrollo web.  ",
-    impact: "La agencia ahora tiene un espacio donde hacer muestra de sus servicios, proyectos y casos de éxito, a sus actuales y futuros clientes.",
-    url: "https://agenciainvasivo.com/",
-    image: "/images/projects/invasivo.webp",
-    technologies: ["WordPress", "PHP", "Elementor", "SEO"],
     featured: true,
   }
 ];

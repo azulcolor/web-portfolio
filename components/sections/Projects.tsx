@@ -68,6 +68,13 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
               ))}
             </div>
 
+            {project.collaboration && (
+              <div className="mb-5 flex items-start gap-2 text-xs text-text-muted bg-sand/50 p-2.5 rounded-lg border border-caramel/5">
+                <span className="text-sm shrink-0">🤝</span>
+                <span className="leading-snug">{project.collaboration}</span>
+              </div>
+            )}
+
             <div className="flex items-center gap-2 text-forest font-medium text-sm group-hover:text-forest-dark transition-colors">
               <span>Ver proyecto</span>
               <svg

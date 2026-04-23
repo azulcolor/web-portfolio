@@ -114,7 +114,7 @@ export default function Testimonials() {
             {/* Prev */}
             <button
               onClick={prev}
-              className="w-10 h-10 rounded-full border border-cream/20 flex items-center justify-center text-cream/60 hover:text-cream hover:border-cream/40 transition-all duration-300"
+              className="w-10 h-10 rounded-full border border-cream/20 flex items-center justify-center text-cream/60 hover:text-cream hover:border-cream/40 hover:cursor-pointer transition-all duration-300"
               aria-label="Testimonio anterior"
               id="testimonial-prev"
             >
@@ -154,7 +154,7 @@ export default function Testimonials() {
             {/* Next */}
             <button
               onClick={next}
-              className="w-10 h-10 rounded-full border border-cream/20 flex items-center justify-center text-cream/60 hover:text-cream hover:border-cream/40 transition-all duration-300"
+              className="w-10 h-10 rounded-full border border-cream/20 flex items-center justify-center text-cream/60 hover:text-cream hover:border-cream/40 hover:cursor-pointer transition-all duration-300"
               aria-label="Siguiente testimonio"
               id="testimonial-next"
             >

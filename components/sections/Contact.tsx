@@ -270,7 +270,7 @@ export default function Contact() {
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
                 id="contact-submit"
-                className="w-full py-4 bg-forest text-cream font-medium rounded-xl hover:bg-forest-dark transition-all duration-300 hover:shadow-xl hover:shadow-forest/20 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+                className="w-full py-4 bg-forest text-cream font-medium rounded-xl hover:bg-forest-dark hover:cursor-pointer transition-all duration-300 hover:shadow-xl hover:shadow-forest/20 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
               >
                 {isSubmitting ? (
                   <>
