@@ -1,26 +1,185 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+/* ─── Design System: Bosque & Café ─── */
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  /* Backgrounds */
+  --color-cream: #FAF6F1;
+  --color-sand: #F0EBE3;
+  --color-charcoal: #1A1A17;
+  --color-charcoal-light: #2C2A27;
+
+  /* Greens */
+  --color-forest: #4A5D3C;
+  --color-forest-dark: #3A4A2F;
+  --color-sage: #7A9268;
+  --color-mint: #B5C4A8;
+  --color-mint-light: #D4DFC9;
+
+  /* Browns */
+  --color-mocha: #6B5243;
+  --color-warm-brown: #8B7355;
+  --color-caramel: #C4A882;
+  --color-caramel-light: #D9C4A5;
+
+  /* Text */
+  --color-text-primary: #2C2A27;
+  --color-text-secondary: #6B6560;
+  --color-text-muted: #9C9590;
+  --color-text-light: #FAF6F1;
+
+  /* Accent */
+  --color-terracotta: #D4A574;
+
+  /* Fonts */
+  --font-display: var(--font-cormorant);
+  --font-body: var(--font-dm-sans);
+  --font-accent: var(--font-caveat);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* ─── Base Styles ─── */
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--color-cream);
+  color: var(--color-text-primary);
+  font-family: var(--font-body), system-ui, sans-serif;
+  overflow-x: hidden;
+}
+
+/* ─── Grain Texture Overlay ─── */
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  pointer-events: none;
+  opacity: 0.03;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 256px 256px;
+}
+
+/* ─── Selection ─── */
+
+::selection {
+  background-color: var(--color-mint);
+  color: var(--color-charcoal);
+}
+
+/* ─── Typography Utilities ─── */
+
+.font-display {
+  font-family: var(--font-display), Georgia, serif;
+}
+
+.font-accent {
+  font-family: var(--font-accent), cursive;
+}
+
+/* ─── Smooth Image Loading ─── */
+
+img {
+  transition: opacity 0.4s ease;
+}
+
+/* ─── Custom Scrollbar ─── */
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-sand);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-caramel);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-warm-brown);
+}
+
+/* ─── Organic Divider ─── */
+
+.organic-divider {
+  width: 100%;
+  height: 60px;
+  background: transparent;
+  position: relative;
+}
+
+.organic-divider::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background: var(--color-sand);
+  clip-path: ellipse(55% 100% at 50% 100%);
+}
+
+/* ─── Animations ─── */
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes grain {
+  0%, 100% { transform: translate(0, 0); }
+  10% { transform: translate(-5%, -10%); }
+  20% { transform: translate(-15%, 5%); }
+  30% { transform: translate(7%, -25%); }
+  40% { transform: translate(-5%, 25%); }
+  50% { transform: translate(-15%, 10%); }
+  60% { transform: translate(15%, 0%); }
+  70% { transform: translate(0%, 15%); }
+  80% { transform: translate(3%, 35%); }
+  90% { transform: translate(-10%, 10%); }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* ─── Section Transitions ─── */
+
+.section-dark {
+  background-color: var(--color-charcoal);
+  color: var(--color-text-light);
+}
+
+.section-sand {
+  background-color: var(--color-sand);
 }

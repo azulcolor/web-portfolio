@@ -1,0 +1,291 @@
+// Project data, services, and content constants
+
+export const SITE_CONFIG = {
+  name: "Eduardo Leal",
+  fullName: "Eduardo Agustin Leal Pastelin",
+  title: "Desarrollador Web",
+  email: "lealpastelin@gmail.com",
+  phone: "+52 998 293 3230",
+  whatsapp: "https://wa.me/529982933230",
+  linkedin: "https://www.linkedin.com/in/eduardo-leal-766154245/?locale=es",
+  github: "https://github.com/lealpastelin",
+  tiktok: "https://www.tiktok.com/@pastelin_l",
+  location: "Mérida, México",
+};
+
+export interface Project {
+  id: string;
+  name: string;
+  client: string;
+  category: string;
+  categoryLabel: string;
+  description: string;
+  impact: string;
+  url: string;
+  image: string;
+  technologies: string[];
+  featured: boolean;
+}
+
+export const PROJECTS: Project[] = [
+  {
+    id: "brasa-y-sal",
+    name: "Brasa y Sal",
+    client: "Restaurante Brasa y Sal",
+    category: "restaurante",
+    categoryLabel: "Restaurante",
+    description:
+      "Sitio web completo para restaurante de mariscos y carnes a las brasas en Tequila, Jalisco. Diseño que transmite la esencia del pueblo mágico con sistema de reservaciones integrado.",
+    impact:
+      "Los clientes ahora pueden ver el menú completo y reservar mesa directamente desde su celular. El restaurante reporta un aumento significativo en reservaciones digitales.",
+    url: "https://restaurantebrasaysal.com/",
+    image: "/images/projects/brasa-y-sal.webp",
+    technologies: ["WordPress", "PHP", "Elementor", "SEO"],
+    featured: true,
+  },
+  {
+    id: "la-moresca",
+    name: "Grupo La Moresca",
+    client: "Grupo La Moresca",
+    category: "restaurante",
+    categoryLabel: "Grupo Restaurantero",
+    description:
+      "Portal web para grupo restaurantero en Guadalajara. Plataforma que unifica la presencia digital de múltiples establecimientos con su identidad única.",
+    impact:
+      "Consolidó la presencia digital del grupo, facilitando que nuevos comensales descubran todos sus restaurantes desde un solo lugar.",
+    url: "https://lamoresca.com/",
+    image: "/images/projects/la-moresca.webp",
+    technologies: ["PHP", "Kirby", "SEO"],
+    featured: true,
+  },
+  {
+    id: "kingkoil",
+    name: "King Koil Guadalajara",
+    client: "King Koil",
+    category: "ecommerce",
+    categoryLabel: "E-commerce / Lujo",
+    description:
+      "Showroom digital para la marca de colchones de lujo King Koil en Guadalajara. Experiencia web que transmite la calidad artesanal y tecnología de la marca desde 1898.",
+    impact:
+      "El sitio ayuda a los clientes a explorar la línea completa de productos y agendar visitas al showroom, fortaleciendo la presencia de la marca en la región.",
+    url: "https://kingkoilguadalajara.com/",
+    image: "/images/projects/kingkoil.webp",
+    technologies: ["WordPress", "PHP", "Elementor", "WooCommerce"],
+    featured: true,
+  },
+  {
+    id: "conforta",
+    name: "Colchones Conforta",
+    client: "Colchones Conforta",
+    category: "ecommerce",
+    categoryLabel: "E-commerce",
+    description:
+      "Tienda en línea para fábrica de colchones en Guadalajara. E-commerce completo con catálogo de productos, directo de fábrica con envío en la ZMG.",
+    impact:
+      "Los clientes pueden comparar modelos, ver precios de fábrica y comprar directamente en línea con entrega rápida en toda la zona metropolitana.",
+    url: "https://colchonesconforta.com/",
+    image: "/images/projects/conforta.webp",
+    technologies: ["WordPress", "PHP", "WooCommerce", "Elementor"],
+    featured: true,
+  },
+  {
+    id: "pearlstem",
+    name: "PearlStem",
+    client: "PearlStem",
+    category: "salud",
+    categoryLabel: "Salud / Medicina",
+    description:
+      "Sitio web para clínica de medicina regenerativa y estética avanzada. Diseño que proyecta confianza, profesionalismo y vanguardia médica.",
+    impact:
+      "La clínica ahora tiene una presencia digital profesional que educa a pacientes sobre tratamientos con células madre y facilita la agenda de valoraciones.",
+    url: "https://pearlstem.com/",
+    image: "/images/projects/pearlstem.webp",
+    technologies: ["WordPress", "PHP", "Elementor", "SEO"],
+    featured: true,
+  },
+  {
+    id: "walter-vera",
+    name: "Walter Vera",
+    client: "Walter Vera Fotografía",
+    category: "creativo",
+    categoryLabel: "Portfolio Creativo",
+    description:
+      "Portfolio editorial y cinematográfico para fotógrafo de bodas en Mérida, Yucatán. Diseño que deja que las imágenes hablen por sí solas.",
+    impact:
+      "Un portfolio que refleja la calidad editorial del fotógrafo y atrae parejas que buscan fotografía de bodas premium en destinos mexicanos.",
+    url: "https://www.waltervera.com/",
+    image: "/images/projects/walter-vera.webp",
+    technologies: ["Next.js", "Tailwind CSS", "Vercel"],
+    featured: true,
+  },
+  {
+    id: "invasivo", 
+    name: "Agencia Invasivo",
+    client: "Agencia Invasivo",
+    category: "creativo",
+    categoryLabel: "Agencia Creativa",
+    description: "Información y portafolio de la agencia creativa Invasivo dedicada a marketing, seo y desarrollo web.  ",
+    impact: "La agencia ahora tiene un espacio donde hacer muestra de sus servicios, proyectos y casos de éxito, a sus actuales y futuros clientes.",
+    url: "https://agenciainvasivo.com/",
+    image: "/images/projects/invasivo.webp",
+    technologies: ["WordPress", "PHP", "Elementor", "SEO"],
+    featured: true,
+  }
+];
+
+export interface Service {
+  id: string;
+  icon: string;
+  title: string;
+  description: string;
+  features: string[];
+}
+
+export const SERVICES: Service[] = [
+  {
+    id: "web-design",
+    icon: "🌐",
+    title: "Diseño y Desarrollo Web",
+    description:
+      "Sitios a medida que capturan la esencia de tu marca. Cada pixel pensado para convertir visitantes en clientes.",
+    features: [
+      "Diseño responsivo y moderno",
+      "Desarrollo a medida o CMS",
+      "Optimizado para velocidad",
+      "Integración con reservaciones",
+    ],
+  },
+  {
+    id: "ecommerce",
+    icon: "🛒",
+    title: "E-Commerce",
+    description:
+      "Tiendas en línea que venden. Catálogos atractivos, checkout simple y todo lo que necesitas para vender digital.",
+    features: [
+      "WooCommerce y Shopify",
+      "Pasarelas de pago",
+      "Gestión de inventario",
+      "Reportes de ventas",
+    ],
+  },
+  {
+    id: "seo",
+    icon: "🔍",
+    title: "SEO & Performance",
+    description:
+      "Para que te encuentren en Google y se queden en tu sitio. Velocidad y posicionamiento que generan resultados.",
+    features: [
+      "Optimización on-page",
+      "Core Web Vitals",
+      "Keywords estratégicas",
+      "Google Search Console",
+    ],
+  },
+  {
+    id: "maintenance",
+    icon: "🛠️",
+    title: "Mantenimiento Web",
+    description:
+      "Tu sitio siempre actualizado, seguro y funcionando. Tranquilidad digital para que tú te enfoques en tu negocio.",
+    features: [
+      "Actualizaciones de seguridad",
+      "Backups automáticos",
+      "Soporte prioritario",
+      "Reportes mensuales",
+    ],
+  },
+];
+
+export interface Testimonial {
+  id: string;
+  name: string;
+  role: string;
+  company: string;
+  quote: string;
+  avatar: string;
+}
+
+export const TESTIMONIALS: Testimonial[] = [
+  {
+    id: "testimonial-1",
+    name: "Carlos Mendoza",
+    role: "Propietario",
+    company: "Brasa y Sal",
+    quote:
+      "Eduardo entendió a la perfección la esencia de nuestro restaurante. La página no solo se ve increíble, sino que nuestros clientes ahora reservan directamente desde el celular. Ha sido un cambio total para el negocio.",
+    avatar: "/images/avatars/avatar-1.png",
+  },
+  {
+    id: "testimonial-2",
+    name: "Andrea Gutiérrez",
+    role: "Directora de Marketing",
+    company: "Grupo La Moresca",
+    quote:
+      "Trabajar con Eduardo fue muy fluido. Capturó la identidad de cada uno de nuestros restaurantes en un solo sitio coherente. El diseño es elegante y nuestros clientes nos felicitan por la página constantemente.",
+    avatar: "/images/avatars/avatar-2.png",
+  },
+  {
+    id: "testimonial-3",
+    name: "Roberto Sánchez",
+    role: "Gerente Regional",
+    company: "King Koil Guadalajara",
+    quote:
+      "Necesitábamos una página que transmitiera la calidad y el lujo de nuestra marca. Eduardo logró exactamente eso. El sitio es rápido, se ve premium y nos ayuda a conectar con clientes que buscan lo mejor en descanso.",
+    avatar: "/images/avatars/avatar-3.png",
+  },
+  {
+    id: "testimonial-4",
+    name: "Dra. Mariana Torres",
+    role: "Directora Médica",
+    company: "PearlStem",
+    quote:
+      "En medicina regenerativa, la confianza lo es todo. Eduardo creó un sitio que proyecta profesionalismo y vanguardia. Nuestros pacientes nos dicen que la página les dio la confianza para agendar su primera consulta.",
+    avatar: "/images/avatars/avatar-4.png",
+  },
+];
+
+export const PROCESS_STEPS = [
+  {
+    number: "01",
+    title: "Descubrimiento",
+    description:
+      "Conversamos sobre tu marca, tus objetivos y tu audiencia. Entiendo qué hace único a tu negocio para crear algo que realmente te represente.",
+  },
+  {
+    number: "02",
+    title: "Diseño",
+    description:
+      "Creo propuestas visuales que capturen la esencia de tu marca. Cada detalle pensado para enamorar a tus clientes desde el primer scroll.",
+  },
+  {
+    number: "03",
+    title: "Desarrollo",
+    description:
+      "Código limpio, rápido y optimizado. Tu sitio no solo se verá increíble — cargará en segundos y se posicionará en Google.",
+  },
+  {
+    number: "04",
+    title: "Lanzamiento",
+    description:
+      "Testing exhaustivo, configuración de SEO y deploy. Tu sitio listo para recibir clientes y generar resultados desde el día uno.",
+  },
+  {
+    number: "05",
+    title: "Acompañamiento",
+    description:
+      "No desaparezco después del lanzamiento. Soporte continuo, actualizaciones y mejoras para que tu sitio siga creciendo contigo.",
+  },
+];
+
+export const TECH_STACK = [
+  { name: "React", icon: "⚛️" },
+  { name: "Next.js", icon: "▲" },
+  { name: "TypeScript", icon: "📘" },
+  { name: "Tailwind CSS", icon: "🎨" },
+  { name: "WordPress", icon: "📝" },
+  { name: "Node.js", icon: "🟢" },
+  { name: "PHP", icon: "🐘" },
+  { name: "MySQL", icon: "🗄️" },
+  { name: "Figma", icon: "🎭" },
+  { name: "Vercel", icon: "🚀" },
+];
