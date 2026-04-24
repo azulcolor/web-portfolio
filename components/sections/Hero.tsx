@@ -127,7 +127,7 @@ export default function Hero() {
           <div className="flex flex-wrap items-center justify-center gap-8 md:gap-12 mt-16 pt-8 border-t border-caramel/20">
             <div className="text-center">
               <span className="font-display text-3xl md:text-4xl font-bold text-forest">
-                +8
+                +10
               </span>
               <p className="text-sm text-text-muted mt-1">
                 Proyectos entregados
