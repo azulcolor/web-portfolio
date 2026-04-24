@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://eduardoleal.dev/sitemap.xml",
+    sitemap: "https://lealpastelin.com/sitemap.xml",
   };
 }
