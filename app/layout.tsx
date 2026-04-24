@@ -26,7 +26,7 @@ const caveat = Caveat({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://eduardoleal.dev"),
+  metadataBase: new URL("https://lealpastelin.com"),
   title: {
     default:
       "Eduardo Leal | Desarrollador Web para Restaurantes y Marcas Premium en México",
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
   authors: [
     {
       name: "Eduardo Agustin Leal Pastelin",
-      url: "https://eduardoleal.dev",
+      url: "https://lealpastelin.com",
     },
   ],
   creator: "Eduardo Agustin Leal Pastelin",
@@ -73,7 +73,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "es_MX",
-    url: "https://eduardoleal.dev",
+    url: "https://lealpastelin.com",
     siteName: "Eduardo Leal — Desarrollador Web",
     title:
       "Eduardo Leal | Desarrollador Web para Restaurantes y Marcas Premium",
@@ -96,7 +96,7 @@ export const metadata: Metadata = {
     images: ["/og-image.png"],
   },
   alternates: {
-    canonical: "https://eduardoleal.dev",
+    canonical: "https://lealpastelin.com",
   },
   category: "technology",
 };
@@ -107,11 +107,11 @@ const jsonLd = {
   "@graph": [
     {
       "@type": "Person",
-      "@id": "https://eduardoleal.dev/#person",
+      "@id": "https://lealpastelin.com/#person",
       name: "Eduardo Agustin Leal Pastelin",
       alternateName: "Eduardo Leal",
-      url: "https://eduardoleal.dev",
-      image: "https://eduardoleal.dev/images/eduardo-portrait.png",
+      url: "https://lealpastelin.com",
+      image: "https://lealpastelin.com/images/eduardo-portrait.png",
       jobTitle: "Desarrollador Web Frontend",
       description:
         "Desarrollador web freelance especializado en crear sitios para restaurantes y marcas premium en México.",
@@ -143,9 +143,9 @@ const jsonLd = {
     },
     {
       "@type": "ProfessionalService",
-      "@id": "https://eduardoleal.dev/#service",
+      "@id": "https://lealpastelin.com/#service",
       name: "Eduardo Leal — Desarrollo Web",
-      provider: { "@id": "https://eduardoleal.dev/#person" },
+      provider: { "@id": "https://lealpastelin.com/#person" },
       description:
         "Diseño y desarrollo web profesional para restaurantes y marcas premium en México.",
       areaServed: {
@@ -153,14 +153,14 @@ const jsonLd = {
         name: "México",
       },
       serviceType: "Diseño y Desarrollo Web",
-      url: "https://eduardoleal.dev",
+      url: "https://lealpastelin.com",
     },
     {
       "@type": "WebSite",
-      "@id": "https://eduardoleal.dev/#website",
-      url: "https://eduardoleal.dev",
+      "@id": "https://lealpastelin.com/#website",
+      url: "https://lealpastelin.com",
       name: "Eduardo Leal — Desarrollador Web",
-      publisher: { "@id": "https://eduardoleal.dev/#person" },
+      publisher: { "@id": "https://lealpastelin.com/#person" },
       inLanguage: "es-MX",
     },
   ],
