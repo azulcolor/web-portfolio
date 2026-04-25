@@ -41,7 +41,7 @@ export default function Contact() {
   };
 
   return (
-    <section id="contacto" className="py-24 md:py-32 relative">
+    <section id="contacto" className="py-24 md:py-32 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-6">
         {/* CTA Header */}
         <FadeIn>
