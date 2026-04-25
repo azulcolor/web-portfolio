@@ -38,7 +38,8 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
             src={project.image}
             alt={`Proyecto web ${project.name} - ${project.categoryLabel} - Desarrollado por Eduardo Leal`}
             fill
-            quality={95}
+            quality={85}
+            sizes="(max-width: 768px) 100vw, 50vw"
             className="object-cover object-top transition-transform duration-500 ease-out group-hover:scale-105 will-change-transform"
           />
         </div>

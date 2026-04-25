@@ -34,7 +34,8 @@ export default function About() {
                   width={600}
                   height={700}
                   priority
-                  sizes="(max-width: 768px) 100vw, 50vw"
+                  quality={75}
+                  sizes="(max-width: 640px) 90vw, (max-width: 1024px) 45vw, 600px"
                   className="object-cover w-full aspect-[4/5] group-hover:scale-105 transition-transform duration-500 ease-out will-change-transform"
                 />
                 {/* Warm overlay */}
