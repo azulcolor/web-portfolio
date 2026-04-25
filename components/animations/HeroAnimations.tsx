@@ -1,4 +1,3 @@
-// HeroAnimations.tsx — sin Framer
 export function HeroAnimations() {
   return (
     <>

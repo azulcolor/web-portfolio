@@ -1,5 +1,3 @@
-"use client";
-
 import { SITE_CONFIG } from "@/lib/constants";
 import { HeroAnimations } from "../animations/HeroAnimations";
 
@@ -18,7 +16,6 @@ export default function Hero() {
 
         {/* Floating leaf decorations */}
 
-        <HeroAnimations />
       </div>
 
       <div className="max-w-7xl mx-auto px-6 text-center relative z-10 animate-fade-in [animation-delay:1000ms] opacity-0">
