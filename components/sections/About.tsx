@@ -33,7 +33,7 @@ export default function About() {
                   height={700}
                   loading="lazy" 
                   quality={75}
-                  sizes="(max-width: 640px) 90vw, (max-width: 1024px) 45vw, 600px"
+                  sizes="(max-width: 640px) 95vw, (max-width: 1024px) 45vw, 600px"
                   className="object-cover w-full aspect-[4/5] group-hover:scale-105 transition-transform duration-500 ease-out will-change-transform"
                 />
                 {/* Warm overlay */}
