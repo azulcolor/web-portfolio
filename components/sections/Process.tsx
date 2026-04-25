@@ -1,5 +1,3 @@
-"use client";
-
 import { FadeIn, StaggerContainer, StaggerItem } from "@/components/animations/FadeIn";
 import { PROCESS_STEPS } from "@/lib/constants";
 

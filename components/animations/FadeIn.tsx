@@ -1,8 +1,8 @@
 "use client";
 
-import { motion, type Variants } from "framer-motion";
-import { useInView } from "framer-motion";
-import { useRef, type ReactNode } from "react";
+import { useEffect, useRef, type ReactNode } from "react";
+
+// ─── FadeIn ───────────────────────────────────────────────────────────────────
 
 interface FadeInProps {
   children: ReactNode;
@@ -13,23 +13,11 @@ interface FadeInProps {
   once?: boolean;
 }
 
-const directionVariants: Record<string, Variants> = {
-  up: {
-    hidden: { opacity: 0, y: 40 },
-    visible: { opacity: 1, y: 0 },
-  },
-  down: {
-    hidden: { opacity: 0, y: -40 },
-    visible: { opacity: 1, y: 0 },
-  },
-  left: {
-    hidden: { opacity: 0, x: -40 },
-    visible: { opacity: 1, x: 0 },
-  },
-  right: {
-    hidden: { opacity: 0, x: 40 },
-    visible: { opacity: 1, x: 0 },
-  },
+const directionStyles: Record<string, string> = {
+  up:    "opacity-0 translate-y-10",
+  down:  "opacity-0 -translate-y-10",
+  left:  "opacity-0 -translate-x-10",
+  right: "opacity-0 translate-x-10",
 };
 
 export function FadeIn({
@@ -37,26 +25,44 @@ export function FadeIn({
   direction = "up",
   delay = 0,
   duration = 0.6,
-  className,
+  className = "",
   once = true,
 }: FadeInProps) {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once, margin: "-50px" });
+  const ref = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          el.style.transitionDelay = `${delay}s`;
+          el.style.transitionDuration = `${duration}s`;
+          el.classList.remove("opacity-0", "translate-y-10", "-translate-y-10", "translate-x-10", "-translate-x-10");
+          if (once) observer.disconnect();
+        } else if (!once) {
+          el.classList.add(...directionStyles[direction].split(" "));
+        }
+      },
+      { rootMargin: "-50px" }
+    );
+
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, [direction, delay, duration, once]);
 
   return (
-    <motion.div
+    <div
       ref={ref}
-      initial="hidden"
-      animate={isInView ? "visible" : "hidden"}
-      variants={directionVariants[direction]}
-      transition={{ duration, delay, ease: [0.25, 0.4, 0.25, 1] }}
-      className={className}
-      style={{ willChange: isInView ? "transform, opacity" : "auto" }}
+      className={`transition-all ease-[cubic-bezier(0.25,0.4,0.25,1)] ${directionStyles[direction]} ${className}`}
     >
       {children}
-    </motion.div>
+    </div>
   );
 }
+
+// ─── StaggerContainer ─────────────────────────────────────────────────────────
 
 interface StaggerContainerProps {
   children: ReactNode;
@@ -67,56 +73,65 @@ interface StaggerContainerProps {
 
 export function StaggerContainer({
   children,
-  className,
+  className = "",
   staggerDelay = 0.1,
   once = true,
 }: StaggerContainerProps) {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once, margin: "-50px" });
+  const ref = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+
+    const items = el.querySelectorAll<HTMLElement>("[data-stagger-item]");
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          items.forEach((item, i) => {
+            item.style.transitionDelay = `${i * staggerDelay}s`;
+            item.classList.remove("opacity-0", "translate-y-8");
+          });
+          if (once) observer.disconnect();
+        } else if (!once) {
+          items.forEach((item) => {
+            item.classList.add("opacity-0", "translate-y-8");
+          });
+        }
+      },
+      { rootMargin: "-50px" }
+    );
+
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, [staggerDelay, once]);
 
   return (
-    <motion.div
-      ref={ref}
-      initial="hidden"
-      animate={isInView ? "visible" : "hidden"}
-      variants={{
-        hidden: {},
-        visible: {
-          transition: {
-            staggerChildren: staggerDelay,
-          },
-        },
-      }}
-      className={className}
-    >
+    <div ref={ref} className={className}>
       {children}
-    </motion.div>
+    </div>
   );
 }
+
+// ─── StaggerItem ──────────────────────────────────────────────────────────────
 
 interface StaggerItemProps {
   children: ReactNode;
   className?: string;
 }
 
-export function StaggerItem({ children, className }: StaggerItemProps) {
+export function StaggerItem({ children, className = "" }: StaggerItemProps) {
   return (
-    <motion.div
-      variants={{
-        hidden: { opacity: 0, y: 30 },
-        visible: {
-          opacity: 1,
-          y: 0,
-          transition: { duration: 0.5, ease: [0.25, 0.4, 0.25, 1] },
-        },
-      }}
-      className={className}
-      style={{ willChange: "transform, opacity" }}
+    <div
+      data-stagger-item
+      className={`opacity-0 translate-y-8 transition-all duration-500 ease-[cubic-bezier(0.25,0.4,0.25,1)] ${className}`}
     >
       {children}
-    </motion.div>
+    </div>
   );
 }
+
+// ─── ScaleIn ──────────────────────────────────────────────────────────────────
 
 interface ScaleInProps {
   children: ReactNode;
@@ -124,20 +139,34 @@ interface ScaleInProps {
   className?: string;
 }
 
-export function ScaleIn({ children, delay = 0, className }: ScaleInProps) {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: "-50px" });
+export function ScaleIn({ children, delay = 0, className = "" }: ScaleInProps) {
+  const ref = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          el.style.transitionDelay = `${delay}s`;
+          el.classList.remove("opacity-0", "scale-90");
+          observer.disconnect();
+        }
+      },
+      { rootMargin: "-50px" }
+    );
+
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, [delay]);
 
   return (
-    <motion.div
+    <div
       ref={ref}
-      initial={{ opacity: 0, scale: 0.9 }}
-      animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.9 }}
-      transition={{ duration: 0.5, delay, ease: [0.25, 0.4, 0.25, 1] }}
-      className={className}
-      style={{ willChange: "transform, opacity" }}
+      className={`opacity-0 scale-90 transition-all duration-500 ease-[cubic-bezier(0.25,0.4,0.25,1)] ${className}`}
     >
       {children}
-    </motion.div>
+    </div>
   );
 }
