@@ -22,6 +22,7 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: 30 }}
       transition={{ duration: 0.5, delay: index * 0.1 }}
+      style={{ willChange: "transform, opacity" }}
       className="group relative rounded-3xl overflow-hidden cursor-pointer bg-cream border border-caramel/20 shadow-md hover:shadow-xl hover:border-forest/30 transition-all duration-500 flex flex-col"
     >
       <a

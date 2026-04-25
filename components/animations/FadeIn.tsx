@@ -51,6 +51,7 @@ export function FadeIn({
       variants={directionVariants[direction]}
       transition={{ duration, delay, ease: [0.25, 0.4, 0.25, 1] }}
       className={className}
+      style={{ willChange: "transform, opacity" }}
     >
       {children}
     </motion.div>
@@ -110,6 +111,7 @@ export function StaggerItem({ children, className }: StaggerItemProps) {
         },
       }}
       className={className}
+      style={{ willChange: "transform, opacity" }}
     >
       {children}
     </motion.div>
@@ -133,6 +135,7 @@ export function ScaleIn({ children, delay = 0, className }: ScaleInProps) {
       animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.9 }}
       transition={{ duration: 0.5, delay, ease: [0.25, 0.4, 0.25, 1] }}
       className={className}
+      style={{ willChange: "transform, opacity" }}
     >
       {children}
     </motion.div>
