@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { SITE_CONFIG } from "@/lib/constants";
 
 const navLinks = [
   { href: "#inicio", label: "Inicio" },
@@ -50,16 +49,11 @@ export default function Navbar() {
 
   return (
     <>
-      <motion.nav
-        initial={{ y: -100 }}
-        animate={{ y: 0 }}
-        transition={{ duration: 0.6, ease: [0.25, 0.4, 0.25, 1] }}
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
+<nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 animate-nav-slide ${
           isScrolled
             ? "bg-cream/80 backdrop-blur-xl shadow-[0_1px_20px_rgba(0,0,0,0.06)] py-3"
             : "bg-transparent py-5"
-        }`}
-      >
+        }`}>
         <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
           {/* Logo */}
           <a
@@ -152,7 +146,7 @@ export default function Navbar() {
             />
           </button>
         </div>
-      </motion.nav>
+      </nav>
 
       {/* Mobile Menu */}
       <AnimatePresence>

@@ -257,3 +257,17 @@ img {
 .animate-scroll-dot {
   animation: scrollDot 2s ease-in-out infinite;
 }
+
+@keyframes navSlide {
+  from {
+    transform: translateY(-100%);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+.animate-nav-slide {
+  animation: navSlide 0.6s cubic-bezier(0.25, 0.4, 0.25, 1) forwards;
+}

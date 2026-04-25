@@ -51,7 +51,7 @@ export function FadeIn({
       variants={directionVariants[direction]}
       transition={{ duration, delay, ease: [0.25, 0.4, 0.25, 1] }}
       className={className}
-      style={{ willChange: "transform, opacity" }}
+      style={{ willChange: isInView ? "transform, opacity" : "auto" }}
     >
       {children}
     </motion.div>
