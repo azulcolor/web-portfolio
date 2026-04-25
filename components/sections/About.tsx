@@ -1,9 +1,7 @@
-"use client";
-
 import Image from "next/image";
 import { FadeIn } from "@/components/animations/FadeIn";
 import { StaggerContainer, StaggerItem } from "@/components/animations/FadeIn";
-import { TECH_STACK, SITE_CONFIG } from "@/lib/constants";
+import { TECH_STACK } from "@/lib/constants";
 
 export default function About() {
   return (
@@ -33,7 +31,7 @@ export default function About() {
                   alt="Eduardo Agustin Leal Pastelin - Desarrollador Web en Mérida, México"
                   width={600}
                   height={700}
-                  priority
+                  loading="lazy" 
                   quality={75}
                   sizes="(max-width: 640px) 90vw, (max-width: 1024px) 45vw, 600px"
                   className="object-cover w-full aspect-[4/5] group-hover:scale-105 transition-transform duration-500 ease-out will-change-transform"
