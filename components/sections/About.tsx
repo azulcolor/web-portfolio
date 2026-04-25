@@ -30,12 +30,12 @@ export default function About() {
               <div className="relative rounded-3xl overflow-hidden shadow-2xl shadow-forest/10">
                 <Image
                   src="/images/eduardo-portrait.webp"
-                  alt="Eduardo Agustin Leal Pastelin - Desarrollador Web en Cancún, México"
+                  alt="Eduardo Agustin Leal Pastelin - Desarrollador Web en Mérida, México"
                   width={600}
                   height={700}
-                  className="object-cover w-full aspect-[4/5] group-hover:scale-105 transition-transform duration-500 ease-out will-change-transform"
                   priority
-                  quality={100}
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover w-full aspect-[4/5] group-hover:scale-105 transition-transform duration-500 ease-out will-change-transform"
                 />
                 {/* Warm overlay */}
                 <div className="absolute inset-0 bg-gradient-to-t from-charcoal/20 via-transparent to-transparent" />

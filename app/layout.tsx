@@ -111,7 +111,7 @@ const jsonLd = {
       name: "Eduardo Agustin Leal Pastelin",
       alternateName: "Eduardo Leal",
       url: "https://lealpastelin.com",
-      image: "https://lealpastelin.com/images/eduardo-portrait.png",
+      image: "https://lealpastelin.com/images/eduardo-portrait.webp",
       jobTitle: "Desarrollador Web Frontend",
       description:
         "Desarrollador web freelance especializado en crear sitios para restaurantes y marcas premium en México.",

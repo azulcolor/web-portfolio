@@ -1,8 +1,7 @@
 "use client";
 
-import { motion } from "framer-motion";
-import { FadeIn } from "@/components/animations/FadeIn";
 import { SITE_CONFIG } from "@/lib/constants";
+import { HeroAnimations } from "../animations/HeroAnimations";
 
 export default function Hero() {
   return (
@@ -18,61 +17,34 @@ export default function Hero() {
         <div className="absolute top-[40%] left-[30%] w-[300px] h-[300px] rounded-full bg-sage/10 blur-[80px]" />
 
         {/* Floating leaf decorations */}
-        <motion.div
-          animate={{ y: [-10, 10, -10], rotate: [0, 5, 0] }}
-          transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
-          className="absolute top-[15%] right-[15%] text-6xl opacity-20 select-none"
-        >
-          🍃
-        </motion.div>
-        <motion.div
-          animate={{ y: [10, -10, 10], rotate: [0, -8, 0] }}
-          transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
-          className="absolute bottom-[25%] left-[8%] text-5xl opacity-15 select-none"
-        >
-          🌿
-        </motion.div>
-        <motion.div
-          animate={{ y: [-5, 15, -5] }}
-          transition={{ duration: 7, repeat: Infinity, ease: "easeInOut" }}
-          className="absolute top-[60%] right-[8%] text-4xl opacity-15 select-none"
-        >
-          ☕
-        </motion.div>
+
+        <HeroAnimations />
       </div>
 
-      <div className="max-w-7xl mx-auto px-6 text-center relative z-10">
+      <div className="max-w-7xl mx-auto px-6 text-center relative z-10 animate-fade-in [animation-delay:1000ms] opacity-0">
         {/* Handwriting accent */}
-        <FadeIn delay={0.2}>
-          <span className="font-accent text-2xl md:text-3xl text-forest inline-block mb-4">
-            ¡Hola, soy Eduardo!
-          </span>
-        </FadeIn>
+        <span className="font-accent text-2xl md:text-3xl text-forest inline-block mb-4">
+          ¡Hola, soy Eduardo!
+        </span>
 
-        {/* Main headline */}
-        <FadeIn delay={0.4}>
-          <h1 className="font-display text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold leading-[0.95] tracking-tight text-charcoal-light mb-6">
-            Creo experiencias web
-            <br />
-            <span className="text-forest">que enamoran</span>
-            <br />
-            a tus clientes
-          </h1>
-        </FadeIn>
+  {/* H1 estático — mejor para LCP y SEO */}
+        <h1 className="font-display text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold leading-[0.95] tracking-tight text-charcoal-light mb-6 animate-fade-in [animation-delay:1000ms] opacity-0">
+          Creo experiencias web
+          <br />
+          <span className="text-forest">que enamoran</span>
+          <br />
+          a tus clientes
+        </h1>
 
-        {/* Subtitle */}
-        <FadeIn delay={0.6}>
-          <p className="max-w-2xl mx-auto text-lg md:text-xl text-text-secondary leading-relaxed mb-10">
-            Desarrollador web especializado en{" "}
-            <span className="text-mocha font-medium">restaurantes</span> y{" "}
-            <span className="text-mocha font-medium">marcas premium</span> en
-            México. Sitios rápidos, hermosos y que convierten.
-          </p>
-        </FadeIn>
+        <p className="max-w-2xl mx-auto text-lg md:text-xl text-text-secondary leading-relaxed mb-10">
+          Desarrollador web especializado en{" "}
+          <span className="text-mocha font-medium">restaurantes</span> y{" "}
+          <span className="text-mocha font-medium">marcas premium</span> en
+          México. Sitios rápidos, hermosos y que convierten.
+        </p>
 
         {/* CTA buttons */}
-        <FadeIn delay={0.8}>
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in [animation-delay:1000ms] opacity-0">
             <a
               href="#proyectos"
               onClick={(e) => {
@@ -120,11 +92,9 @@ export default function Hero() {
               </svg>
             </a>
           </div>
-        </FadeIn>
 
         {/* Stats */}
-        <FadeIn delay={1}>
-          <div className="flex flex-wrap items-center justify-center gap-8 md:gap-12 mt-16 pt-8 border-t border-caramel/20">
+          <div className="flex flex-wrap items-center justify-center gap-8 md:gap-12 mt-16 pt-8 border-t border-caramel/20 animate-fade-in [animation-delay:1000ms] opacity-0">
             <div className="text-center">
               <span className="font-display text-3xl md:text-4xl font-bold text-forest">
                 +10
@@ -152,23 +122,14 @@ export default function Hero() {
               </p>
             </div>
           </div>
-        </FadeIn>
       </div>
 
       {/* Scroll indicator */}
-      <motion.div
-        animate={{ y: [0, 10, 0] }}
-        transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2"
-      >
-        <div className="w-6 h-10 border-2 border-caramel/40 rounded-full flex justify-center pt-2">
-          <motion.div
-            animate={{ y: [0, 12, 0], opacity: [1, 0.3, 1] }}
-            transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-            className="w-1.5 h-1.5 bg-caramel rounded-full"
-          />
-        </div>
-      </motion.div>
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2">
+  <div className="w-6 h-10 border-2 border-caramel/40 rounded-full flex justify-center pt-2">
+    <div className="w-1.5 h-1.5 bg-caramel rounded-full animate-scroll-dot" />
+  </div>
+</div>
     </section>
   );
 }
