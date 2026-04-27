@@ -4,6 +4,7 @@ import { useState, useEffect, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FadeIn } from "@/components/animations/FadeIn";
 import { TESTIMONIALS } from "@/lib/constants";
+import Image from "next/image";
 
 export default function Testimonials() {
   const [current, setCurrent] = useState(0);
@@ -90,12 +91,16 @@ export default function Testimonials() {
               <div className="flex flex-col items-center gap-3">
                 {/* Avatar placeholder - a circle with initials */}
                 <div className="w-14 h-14 rounded-full bg-forest/30 flex items-center justify-center border border-forest/20">
-                  <span className="font-display text-lg font-bold text-cream">
-                    {testimonial.name
-                      .split(" ")
-                      .map((n) => n[0])
+                  {testimonial.avatar ? (
+                    <Image src={testimonial.avatar} alt={testimonial.name} width={56} height={56} className="rounded-full" />
+                  ) : (
+                    <span className="font-display text-lg font-bold text-cream">
+                      {testimonial.name
+                        .split(" ")
+                        .map((n) => n[0])
                       .join("")}
-                  </span>
+                    </span>
+                  )}
                 </div>
                 <div>
                   <p className="font-medium text-cream text-lg">

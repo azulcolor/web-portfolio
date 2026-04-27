@@ -232,39 +232,12 @@ export interface Testimonial {
 export const TESTIMONIALS: Testimonial[] = [
   {
     id: "testimonial-1",
-    name: "Carlos Mendoza",
-    role: "Propietario",
-    company: "Brasa y Sal",
+    name: "Ricardo Carrillo",
+    role: "CEO & Fundador",
+    company: "Agencia Invasivo",
     quote:
-      "Eduardo entendió a la perfección la esencia de nuestro restaurante. La página no solo se ve increíble, sino que nuestros clientes ahora reservan directamente desde el celular. Ha sido un cambio total para el negocio.",
-    avatar: "/images/avatars/avatar-1.png",
-  },
-  {
-    id: "testimonial-2",
-    name: "Andrea Gutiérrez",
-    role: "Directora de Marketing",
-    company: "Grupo La Moresca",
-    quote:
-      "Trabajar con Eduardo fue muy fluido. Capturó la identidad de cada uno de nuestros restaurantes en un solo sitio coherente. El diseño es elegante y nuestros clientes nos felicitan por la página constantemente.",
-    avatar: "/images/avatars/avatar-2.png",
-  },
-  {
-    id: "testimonial-3",
-    name: "Roberto Sánchez",
-    role: "Gerente Regional",
-    company: "King Koil Guadalajara",
-    quote:
-      "Necesitábamos una página que transmitiera la calidad y el lujo de nuestra marca. Eduardo logró exactamente eso. El sitio es rápido, se ve premium y nos ayuda a conectar con clientes que buscan lo mejor en descanso.",
-    avatar: "/images/avatars/avatar-3.png",
-  },
-  {
-    id: "testimonial-4",
-    name: "Dra. Mariana Torres",
-    role: "Directora Médica",
-    company: "PearlStem",
-    quote:
-      "En medicina regenerativa, la confianza lo es todo. Eduardo creó un sitio que proyecta profesionalismo y vanguardia. Nuestros pacientes nos dicen que la página les dio la confianza para agendar su primera consulta.",
-    avatar: "/images/avatars/avatar-4.png",
+      "En Invasivo hemos trabajado con Eduardo en distintos proyectos web y siempre ha respondido con buen nivel técnico y enfoque en la correcta implementación. Es buen aliado para ejecutar y optimizar desarrollos dentro de nuestras estrategias digitales, asegurando que todo funcione como debe a nivel técnico.",
+    avatar: "/images/avatars/ceo-invasivo.webp",
   },
 ];
 
