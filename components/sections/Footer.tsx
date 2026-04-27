@@ -93,10 +93,10 @@ export default function Footer() {
         {/* Divider */}
         <div className="border-t border-cream/10 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-sm text-cream/30">
-            © {currentYear} Eduardo Leal. Todos los derechos reservados.
+            © {currentYear} Leal Pastelin. Todos los derechos reservados.
           </p>
           <p className="text-sm text-cream/30 flex items-center gap-1.5">
-            Diseñado y desarrollado con <span className="text-lg">☕</span> por Eduardo Leal 
+            Diseñado y desarrollado con <span className="text-lg">☕</span> por Leal Pastelin 
           </p>
         </div>
       </div>
