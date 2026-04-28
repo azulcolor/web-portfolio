@@ -45,7 +45,22 @@ export const PROJECTS: Project[] = [
     featured: true,
     collaboration: "Desarrollo frontend en colaboración estratégica con Agencia Invasivo",
   },
-    {
+  {
+    id: "walter-vera",
+    name: "Walter Vera",
+    client: "Walter Vera Fotografía",
+    category: "creativo",
+    categoryLabel: "Portfolio Creativo",
+    description:
+      "Portfolio editorial y cinematográfico para fotógrafo de bodas en Mérida, Yucatán. Diseño que deja que las imágenes hablen por sí solas.",
+    impact:
+      "Un portfolio que refleja la calidad editorial del fotógrafo y atrae parejas que buscan fotografía de bodas premium en destinos mexicanos.",
+    url: "https://www.waltervera.com/",
+    image: "/images/projects/walter-vera.webp",
+    technologies: ["Next.js", "Tailwind CSS", "Vercel"],
+    featured: true,
+  },
+  {
     id: "brasa-y-sal",
     name: "Brasa y Sal",
     client: "Restaurante Brasa y Sal",
@@ -139,21 +154,6 @@ export const PROJECTS: Project[] = [
     technologies: ["PHP", "MySql", "SEO"],
     featured: true,
     collaboration: "Desarrollo frontend en colaboración estratégica con Agencia Invasivo",
-  },
-  {
-    id: "walter-vera",
-    name: "Walter Vera",
-    client: "Walter Vera Fotografía",
-    category: "creativo",
-    categoryLabel: "Portfolio Creativo",
-    description:
-      "Portfolio editorial y cinematográfico para fotógrafo de bodas en Mérida, Yucatán. Diseño que deja que las imágenes hablen por sí solas.",
-    impact:
-      "Un portfolio que refleja la calidad editorial del fotógrafo y atrae parejas que buscan fotografía de bodas premium en destinos mexicanos.",
-    url: "https://www.waltervera.com/",
-    image: "/images/projects/walter-vera.webp",
-    technologies: ["Next.js", "Tailwind CSS", "Vercel"],
-    featured: true,
   }
 ];
 
