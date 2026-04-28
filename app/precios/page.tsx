@@ -180,7 +180,6 @@ export default function PreciosPage() {
               </div>
               <div className="md:w-1/2 bg-white p-8 rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.08)] border border-sand w-full text-center md:text-left">
                 <h3 className="font-display text-2xl font-bold text-charcoal-light mb-2">Soporte Continuo VIP</h3>
-                <p className="text-sm text-text-muted mb-6">Ingresos pasivos para el negocio, paz mental para el cliente.</p>
                 <div className="flex items-end justify-center md:justify-start gap-1 mb-6">
                   <span className="text-sm text-text-muted mb-2">Desde</span>
                   <span className="font-display text-4xl font-bold text-forest">$1,500</span>

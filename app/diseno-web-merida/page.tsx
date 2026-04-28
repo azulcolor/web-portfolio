@@ -50,7 +50,7 @@ export default function DisenoWebMerida() {
             </h1>
 
             <p className="max-w-2xl mx-auto text-lg md:text-xl text-text-secondary leading-relaxed mb-10">
-              ¿Tu local está increíble pero tu menú web tarda en cargar? Creo experiencias digitales ultra rápidas que transforman visitas en reservaciones. Especializado en el boom gastronómico de Mérida.
+              ¿Tu local está increíble en Paseo de Montejo, Altabrisa o Temozón, pero tu menú web tarda en cargar? En medio del boom gastronómico yucateco, un PDF ya no es suficiente. Creo experiencias digitales nativas y ultra rápidas que transforman visitas en reservaciones.
             </p>
 
             <CtaButtons />
@@ -91,6 +91,27 @@ export default function DisenoWebMerida() {
         <Services />
         <Process />
         <Testimonials />
+        
+        {/* Testimonio Local Mérida */}
+        <section className="py-24 bg-forest/5 border-y border-forest/10">
+          <div className="max-w-4xl mx-auto px-6 text-center">
+            <span className="font-accent text-xl text-forest inline-block mb-4">Caso de Éxito en Mérida</span>
+            <div className="bg-white rounded-3xl p-8 md:p-12 shadow-lg border border-sand">
+              <svg className="w-12 h-12 text-caramel mx-auto mb-6 opacity-50" fill="currentColor" viewBox="0 0 32 32"><path d="M9.333 13.333c0-3.682 2.985-6.667 6.667-6.667v-4c-5.891 0-10.667 4.776-10.667 10.667v16h10.667v-16h-6.667zM25.333 13.333c0-3.682 2.985-6.667 6.667-6.667v-4c-5.891 0-10.667 4.776-10.667 10.667v16h10.667v-16h-6.667z"></path></svg>
+              <p className="text-lg md:text-xl text-charcoal-light italic mb-8 leading-relaxed">
+                "Eduardo entendió a la perfección la estética que buscaba para mi portafolio. Hizo que mis fotografías resaltaran con un diseño minimalista pero muy premium. Además, conocer el mercado de Mérida le permitió hacer una web que carga rapidísimo y se ve impecable."
+              </p>
+              <div className="flex items-center justify-center gap-4">
+                <img src="/images/avatars/walter-vera.webp" alt="Walter Vera" className="w-14 h-14 rounded-full object-cover border-2 border-caramel/30" />
+                <div className="text-left">
+                  <p className="font-display font-bold text-charcoal">Walter Vera</p>
+                  <p className="text-sm text-text-muted">Fotógrafo Cinematográfico, Mérida Yuc.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <Contact />
       </main>
       <Footer />

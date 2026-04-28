@@ -156,6 +156,27 @@ const jsonLd = {
       url: "https://lealpastelin.com",
     },
     {
+      "@type": "LocalBusiness",
+      "@id": "https://lealpastelin.com/#localbusiness",
+      "name": "Eduardo Leal — Agencia de Diseño Web Mérida",
+      "image": "https://lealpastelin.com/images/eduardo-portrait.webp",
+      "telephone": "+52-998-293-3230",
+      "email": "lealpastelin@gmail.com",
+      "url": "https://lealpastelin.com",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Mérida",
+        "addressRegion": "Yucatán",
+        "addressCountry": "MX"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 20.9673,
+        "longitude": -89.6236
+      }
+    },
+    {
       "@type": "WebSite",
       "@id": "https://lealpastelin.com/#website",
       url: "https://lealpastelin.com",
