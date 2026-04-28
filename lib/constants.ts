@@ -239,15 +239,15 @@ export const TESTIMONIALS: Testimonial[] = [
       "En Invasivo hemos trabajado con Eduardo en distintos proyectos web y siempre ha respondido con buen nivel técnico y enfoque en la correcta implementación. Es buen aliado para ejecutar y optimizar desarrollos dentro de nuestras estrategias digitales, asegurando que todo funcione como debe a nivel técnico.",
     avatar: "/images/avatars/ceo-invasivo.webp",
   },
-  {
-    id: "testimonial-2",
-    name: "Walter Vera",
-    role: "Fotógrafo Cinematográfico",
-    company: "Walter Vera Fotografía (Mérida)",
-    quote:
-      "Eduardo entendió a la perfección la estética que buscaba para mi portafolio. Hizo que mis fotografías resaltaran con un diseño minimalista pero muy premium. Además, conocer el mercado de Mérida le permitió hacer una web que carga rapidísimo y se ve impecable.",
-    avatar: "/images/avatars/walter-vera.webp",
-  },
+  // {
+  //   id: "testimonial-2",
+  //   name: "Walter Vera",
+  //   role: "Fotógrafo Cinematográfico",
+  //   company: "Walter Vera Fotografía (Mérida)",
+  //   quote:
+  //     "Eduardo entendió a la perfección la estética que buscaba para mi portafolio. Hizo que mis fotografías resaltaran con un diseño minimalista pero muy premium. Además, conocer el mercado de Mérida le permitió hacer una web que carga rapidísimo y se ve impecable.",
+  //   avatar: "/images/avatars/walter-vera.webp",
+  // },
 ];
 
 export const PROCESS_STEPS = [

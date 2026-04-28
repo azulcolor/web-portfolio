@@ -93,7 +93,7 @@ export default function DisenoWebMerida() {
         <Testimonials />
         
         {/* Testimonio Local Mérida */}
-        <section className="py-24 bg-forest/5 border-y border-forest/10">
+        {/* <section className="py-24 bg-forest/5 border-y border-forest/10">
           <div className="max-w-4xl mx-auto px-6 text-center">
             <span className="font-accent text-xl text-forest inline-block mb-4">Caso de Éxito en Mérida</span>
             <div className="bg-white rounded-3xl p-8 md:p-12 shadow-lg border border-sand">
@@ -110,7 +110,7 @@ export default function DisenoWebMerida() {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
         <Contact />
       </main>
