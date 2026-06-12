@@ -8,42 +8,42 @@ const faqSchema = {
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "¿Por qué debería contratar una agencia de diseño web a medida en lugar de usar un creador de páginas web genérico como WordPress o Wix?",
+      "name": "¿Qué hace diferente a Eduardo Leal de una agencia de diseño web grande?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Los sistemas genéricos como WordPress, Wix o Squarespace añaden código basura innecesario, haciendo que tu sitio web sea lento y frustrante para tus clientes. Como agencia de diseño web a medida, desarrollamos soluciones exclusivas utilizando Next.js y Tailwind CSS. Esto nos permite construir código ultra-limpio de alto rendimiento. Para ti, esto se traduce en una velocidad de carga instantánea que retiene visitas y destruye las tasas de rebote en móviles, algo imposible de conseguir con un creador de páginas web tradicional."
+        "text": "Trabajar directamente con Eduardo significa cero intermediarios. No hay un ejecutivo de ventas que te vende y luego le pasa tu proyecto a un diseñador junior que nunca conocerás. Eduardo mismo diseña, programa y optimiza cada pixel de tu sitio. Eso se traduce en más atención al detalle, comunicación directa por WhatsApp y un resultado final que realmente refleja tu marca, no una plantilla genérica."
       }
     },
     {
       "@type": "Question",
-      "name": "¿Por qué es crucial contar con páginas web en Mérida diseñadas específicamente para el mercado local?",
+      "name": "¿Cómo es el proceso de trabajo desde el inicio hasta la entrega?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "El panorama empresarial en Yucatán está expermientando un crecimiento sin precedentes. Hoy en día, buscar 'paginas web merida' arroja miles de competidores genéricos, pero muy pocos ofrecen una experiencia premium a medida. Contar con un sitio web diseñado localmente pero con estándares de calidad internacionales te posiciona instantáneamente por encima del 90% de la competencia local en Mérida. Google premia la relevancia geográfica y la excelente experiencia móvil, asegurando que tus clientes en zonas de alta plusvalía te encuentren en el primer segundo de búsqueda."
+        "text": "Empezamos con una llamada de 30 minutos para entender tu negocio, tu cliente ideal y tus metas. Después se diseña y programa tu sitio en Next.js con Tailwind CSS — tecnologías de primer mundo que usan Vercel, Airbnb y grandes marcas. En 2 a 4 semanas recibes un sitio ultra-rápido, con SEO configurado y listo para atraer clientes. Sin sorpresas, sin demoras."
       }
     },
     {
       "@type": "Question",
-      "name": "¿Cuáles son las ventajas de sus páginas web de restaurantes y negocios de comida rápida en comparación con menús en PDF?",
+      "name": "¿Por qué usar Next.js en lugar de WordPress para el sitio de mi restaurante o marca?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Obligar a un comensal con hambre a descargar un pesado archivo PDF en su celular es una de las mayores causas de pérdida de clientes en el sector gastronómico. Nuestras paginas web de restaurantes y negocios de comida rápida ofrecen menús interactivos, nativos y ultra-rápidos que se adaptan a cualquier pantalla de teléfono móvil. El cliente puede explorar los platillos, ver precios actualizados y reservar mesa en un solo clic, sin descargas. Además, un menú digital en HTML es rastreable por los motores de búsqueda, permitiendo que tu platillo estrella posicione en tu zona de reparto."
+        "text": "WordPress fue diseñado en 2003 para blogs. Next.js fue diseñado para la web de hoy. Con Next.js tu sitio carga en menos de 1.5 segundos, Google lo indexa instantáneamente porque el contenido viene pre-renderizado desde el servidor, y no existe riesgo de que un plugin desactualizado tire tu sitio. Para restaurantes y marcas premium, la primera impresión lo es todo — y WordPress simplemente no puede competir en velocidad ni elegancia."
       }
     },
     {
       "@type": "Question",
-      "name": "¿Cuánto tiempo toma el desarrollo a medida y qué incluye su servicio de diseño web?",
+      "name": "¿Puedo actualizar el contenido de mi sitio yo solo después de la entrega?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Un desarrollo a medida de alta calidad suele tomar entre 2 y 4 semanas, dependiendo de la complejidad y el alcance de las funcionalidades requeridas. A diferencia de un creador de páginas web automático, nuestro servicio incluye un proceso meticuloso: análisis inicial de marca, diseño de interfaz UX/UI exclusivo, programación nativa de alto rendimiento con Next.js, optimización de velocidad de carga móvil extrema, integración de analíticas avanzadas y configuración SEO técnica lista para indexar en Google."
+        "text": "Depende de lo que necesites. Para cambios sencillos como texto, precios o fotos, se entrega una guía paso a paso o lo hacemos juntos en una llamada. Si necesitas actualizaciones frecuentes como menú de temporada, eventos o nuevos platillos, se puede integrar un panel de administración sencillo. También existen planes de mantenimiento donde Eduardo se encarga de todo por una cuota mensual muy accesible."
       }
     },
     {
       "@type": "Question",
-      "name": "¿Sus páginas web están optimizadas para posicionamiento SEO desde el primer día?",
+      "name": "¿Qué pasa si no quedo satisfecho con el resultado del diseño?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Absolutamente. La mayoría de los desarrolladores entregan la web y después intentan 'arreglar' el SEO. Nosotros construimos con SEO en el núcleo. Gracias a la tecnología de Server-Side Rendering (SSR) y generación estática de Next.js, Google no tiene que esperar a que el navegador de tus clientes cargue scripts pesados; lee la información de tu negocio inmediatamente. Entregamos sitios web con sitemaps automatizados, metadata optimizada e infraestructura de carga ultra veloz para que alcances las primeras posiciones en Google desde el lanzamiento."
+        "text": "Antes de escribir una línea de código, se presenta el diseño completo para tu aprobación. No se avanza hasta que estés convencido. Durante el desarrollo tienes rondas de retroalimentación incluidas. El objetivo es que al recibir tu sitio digas exactamente lo que imaginabas — eso es lo que define la reputación de Eduardo Leal y el 100% de clientes satisfechos que ha mantenido."
       }
     }
   ]
@@ -51,25 +51,25 @@ const faqSchema = {
 
 const FAQS = [
   {
-    question: "¿Por qué contratar una agencia de diseño web a medida en lugar de usar un creador de páginas web genérico?",
-    answer: "Los sistemas genéricos como WordPress o Wix añaden código basura innecesario, ralentizando la experiencia. Al desarrollar a medida con Next.js y Tailwind CSS, eliminamos la lentitud por completo. El resultado es un sitio web ultra-veloz, seguro y optimizado para retener visitas en dispositivos móviles.",
+    question: "¿Qué hace diferente a Eduardo Leal de una agencia de diseño web grande?",
+    answer: "Trabajar directamente conmigo significa cero intermediarios. No hay un ejecutivo de ventas que te vende y luego le pasa tu proyecto a un diseñador junior que nunca conocerás. Yo mismo diseño, programo y optimizo cada pixel de tu sitio. Eso se traduce en más atención al detalle, comunicación directa por WhatsApp y un resultado final que realmente refleja tu marca, no una plantilla genérica.",
   },
   {
-    question: "¿Por qué mi negocio necesita páginas web en Mérida diseñadas localmente?",
-    answer: "Mérida vive un boom comercial inmenso. Destacar requiere más que una plantilla genérica. Un desarrollo local con estándares internacionales te posiciona instantáneamente por encima de tus competidores. Google premia la relevancia geográfica, facilitando que te encuentren en zonas clave de la ciudad.",
+    question: "¿Cómo es tu proceso de trabajo desde el inicio hasta la entrega?",
+    answer: "Empezamos con una llamada de 30 minutos para entender tu negocio, tu cliente ideal y tus metas. Después diseño y programo tu sitio en Next.js con Tailwind CSS — tecnologías de primer mundo que usan Vercel, Airbnb y grandes marcas. En 2 a 4 semanas te entrego un sitio ultra-rápido, con SEO configurado y listo para atraer clientes. Sin sorpresas, sin demoras.",
   },
   {
-    question: "¿Qué ventajas ofrecen sus páginas web de restaurantes frente a los menús en PDF?",
-    answer: "Los menús en PDF son lentos de cargar, incómodos y no se posicionan en Google. Nuestras páginas web para restaurantes ofrecen menús interactivos integrados. Tus comensales navegan al instante, reservan con un clic y Google indexa tus platillos favoritos para búsquedas locales.",
+    question: "¿Por qué usas Next.js en lugar de WordPress?",
+    answer: "WordPress fue diseñado en 2003 para blogs. Next.js fue diseñado para la web de hoy. Con Next.js tu sitio carga en menos de 1.5 segundos, Google lo indexa instantáneamente porque el contenido viene pre-renderizado desde el servidor, y no existe riesgo de que un plugin desactualizado tire tu sitio. Para restaurantes y marcas premium, la primera impresión lo es todo — y WordPress simplemente no puede competir en velocidad ni elegancia.",
   },
   {
-    question: "¿Cuánto tiempo toma el desarrollo y qué incluye su servicio de diseño web?",
-    answer: "Un proyecto premium toma entre 2 y 4 semanas. Incluye consultoría UX/UI exclusiva, diseño visual a medida, optimización técnica extrema de velocidad de carga (Core Web Vitals), analíticas de comportamiento del usuario y configuración SEO completa inicial.",
+    question: "¿Puedo actualizar el contenido de mi sitio yo solo después de la entrega?",
+    answer: "Depende de lo que necesites. Para cambios sencillos como texto, precios o fotos, te entrego una guía paso a paso o lo hacemos juntos en una llamada. Si necesitas actualizaciones frecuentes (menú de temporada, eventos, nuevos platillos), puedo integrar un panel de administración sencillo o simplemente ofrezco planes de mantenimiento donde me encargo de todo por una cuota mensual muy accesible.",
   },
   {
-    question: "¿Las páginas web están optimizadas para SEO desde el primer día?",
-    answer: "Sí. No dejamos el SEO para el final. A través del Server-Side Rendering (SSR) de Next.js, Google lee el contenido de tu sitio al instante desde el servidor. Esto acelera drásticamente tu indexación y te ayuda a escalar posiciones de manera orgánica mucho más rápido.",
-  }
+    question: "¿Qué pasa si no quedo satisfecho con el resultado?",
+    answer: "Antes de escribir una línea de código, te presento el diseño completo para tu aprobación. No avanzo hasta que estés convencido. Durante el desarrollo tienes rondas de retroalimentación incluidas. Mi objetivo es que al recibir tu sitio digas '¡esto es exactamente lo que imaginaba!' — eso es lo que define mi reputación y el 100% de clientes satisfechos que he mantenido.",
+  },
 ];
 
 export default function Faq() {

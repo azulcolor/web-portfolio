@@ -3,6 +3,7 @@ import dynamic from "next/dynamic";
 import Navbar from "@/components/sections/Navbar";
 import { HeroAnimations } from "@/components/animations/HeroAnimations";
 import CtaButtons from "@/components/hero/CtaButtons";
+import MeridaFaq from "@/components/sections/MeridaFaq";
 
 const Projects = dynamic(() => import("@/components/sections/Projects"));
 const Services = dynamic(() => import("@/components/sections/Services"));
@@ -10,6 +11,8 @@ const Process  = dynamic(() => import("@/components/sections/Process"));
 const Testimonials = dynamic(() => import("@/components/sections/Testimonials"));
 const Contact  = dynamic(() => import("@/components/sections/Contact"));
 const Footer   = dynamic(() => import("@/components/sections/Footer"));
+
+
 
 export const metadata: Metadata = {
   title: "Diseño Web para Restaurantes en Mérida | Eduardo Leal",
@@ -159,6 +162,7 @@ export default function DisenoWebMerida() {
           </div>
         </section>
 
+        <MeridaFaq />
         <Contact />
       </main>
       <Footer />

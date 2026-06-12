@@ -26,11 +26,11 @@ export default function Hero() {
 
   {/* H1 estático — mejor para LCP y SEO */}
         <h1 className="font-display text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold leading-[0.95] tracking-tight text-charcoal-light mb-6 animate-fade-in [animation-delay:1000ms] opacity-0">
-          Creo experiencias web
+          Diseño Web para
           <br />
-          <span className="text-forest">que enamoran</span>
+          <span className="text-forest">Restaurantes y Marcas Premium</span>
           <br />
-          a tus clientes
+          en México
         </h1>
 
         <p className="max-w-2xl mx-auto text-lg md:text-xl text-text-secondary leading-relaxed mb-10">

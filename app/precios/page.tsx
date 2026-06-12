@@ -7,7 +7,7 @@ const Contact = dynamic(() => import("@/components/sections/Contact"));
 
 export const metadata: Metadata = {
   title: "Precios de Diseño Web para Restaurantes | Eduardo Leal",
-  description: "Descubre cuánto cuesta una página web profesional en México. Paquetes transparentes de diseño y desarrollo web para restaurantes y marcas premium.",
+  description: "¿Cuánto cuesta una página web en México? Paquetes desde $8,500 MXN para restaurantes y marcas premium. Diseño rápido, hermoso y con SEO incluido. Cotiza gratis.",
   keywords: ["cuanto cuesta una pagina web en mexico", "precio diseño web", "paquetes paginas web", "cotizacion pagina web restaurante", "desarrollo web precios"],
   alternates: {
     canonical: "https://lealpastelin.com/precios",
@@ -20,42 +20,42 @@ const faqSchema = {
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "¿Por qué debería contratar una agencia de diseño web a medida en lugar de usar un creador de páginas web genérico como WordPress o Wix?",
+      "name": "¿Cuánto cuesta una página web para restaurante en México en 2026?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Los sistemas genéricos como WordPress, Wix o Squarespace añaden código basura innecesario, haciendo que tu sitio web sea lento y frustrante para tus clientes. Como agencia de diseño web a medida, desarrollamos soluciones exclusivas utilizando Next.js y Tailwind CSS. Esto nos permite construir código ultra-limpio de alto rendimiento. Para ti, esto se traduce en una velocidad de carga instantánea que retiene visitas y destruye las tasas de rebote en móviles, algo imposible de conseguir con un creador de páginas web tradicional."
+        "text": "El precio de una página web profesional para restaurante en México va desde $8,500 MXN para una landing page de alto impacto, hasta $25,000 MXN o más para un e-commerce gastronómico con pedidos en línea. El precio depende del número de páginas, integraciones (sistema de reservas, pasarela de pagos) y nivel de personalidad de la marca. En todos los casos el precio incluye diseño exclusivo, programación en Next.js y configuración SEO inicial, sin cargos escondidos."
       }
     },
     {
       "@type": "Question",
-      "name": "¿Por qué es crucial contar con páginas web en Mérida diseñadas específicamente para el mercado local?",
+      "name": "¿Se puede pagar en parcialidades o cuotas?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "El panorama empresarial en Yucatán está experimentando un crecimiento sin precedentes. Hoy en día, buscar 'paginas web merida' arroja miles de competidores genéricos, pero muy pocos ofrecen una experiencia premium a medida. Contar con un sitio web diseñado localmente pero con estándares de calidad internacionales te posiciona instantáneamente por encima del 90% de la competencia local en Mérida. Google premia la relevancia geográfica y la excelente experiencia móvil, asegurando que tus clientes en zonas de alta plusvalía te encuentren en el primer segundo de búsqueda."
+        "text": "Sí. El esquema estándar es 50% al inicio del proyecto para apartar fecha y comenzar el diseño, y el 50% restante al momento de la entrega y publicación del sitio. Para proyectos más grandes (e-commerce o sitios multi-página), se pueden acordar tres pagos: inicio, aprobación del diseño y entrega final. Se acepta transferencia bancaria, tarjeta de crédito o OXXO Pay."
       }
     },
     {
       "@type": "Question",
-      "name": "¿Cuáles son las ventajas de sus páginas web de restaurantes y negocios de comida rápida en comparación con menús en PDF?",
+      "name": "¿El precio incluye hosting, dominio y correos corporativos?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Obligar a un comensal con hambre a descargar un pesado archivo PDF en su celular es una de las mayores causas de pérdida de clientes en el sector gastronómico. Nuestras paginas web de restaurantes y negocios de comida rápida ofrecen menús interactivos, nativos y ultra-rápidos que se adaptan a cualquier pantalla de teléfono móvil. El cliente puede explorar los platillos, ver precios actualizados y reservar mesa en un solo clic, sin descargas. Además, un menú digital en HTML es rastreable por los motores de búsqueda, permitiendo que tu platillo estrella posicione en tu zona de reparto."
+        "text": "El desarrollo del sitio y el diseño se cotizan por separado del hosting. Sin embargo, los planes de Cuidado Web incluyen hosting en servidores ultrarrápidos de Vercel, dominio .com y hasta 5 correos corporativos con Google Workspace. El hosting solo es aproximadamente $1,500 MXN al mes e incluye soporte técnico prioritario, actualizaciones de contenido y monitoreo de velocidad y disponibilidad."
       }
     },
     {
       "@type": "Question",
-      "name": "¿Cuánto tiempo toma el desarrollo a medida y qué incluye su servicio de diseño web?",
+      "name": "¿Qué pasa si el proyecto necesita cambios o ajustes después de la entrega?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Un desarrollo a medida de alta calidad suele tomar entre 2 y 4 semanas, dependiendo de la complejidad y el alcance de las funcionalidades requeridas. A diferencia de un creador de páginas web automático, nuestro servicio incluye un proceso meticuloso: análisis inicial de marca, diseño de interfaz UX/UI exclusivo, programación nativa de alto rendimiento con Next.js, optimización de velocidad de carga móvil extrema, integración de analíticas avanzadas y configuración SEO técnica lista para indexar en Google."
+        "text": "Cada proyecto incluye un periodo de garantía de 15 días después de la entrega para corregir cualquier detalle sin costo adicional. Pasado ese periodo, los cambios menores (texto, fotos, precios) se cobran a una tarifa de $400 MXN por hora, o están incluidos ilimitadamente en el plan de Cuidado Web mensual. Los cambios estructurales grandes (nueva sección, integración nueva) se cotizan por separado."
       }
     },
     {
       "@type": "Question",
-      "name": "¿Sus páginas web están optimizadas para posicionamiento SEO desde el primer día?",
+      "name": "¿Hay garantía si no me gusta el resultado?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Absolutamente. La mayoría de los desarrolladores entregan la web y después intentan 'arreglar' el SEO. Nosotros construimos con SEO en el núcleo. Gracias a la tecnología de Server-Side Rendering (SSR) y generación estática de Next.js, Google no tiene que esperar a que el navegador de tus clientes cargue scripts pesados; lee la información de tu negocio inmediatamente. Entregamos sitios web con sitemaps automatizados, metadata optimizada e infraestructura de carga ultra veloz para que alcances las primeras posiciones en Google desde el lanzamiento."
+        "text": "Sí. El proceso está diseñado para eliminar sorpresas: antes de programar una sola línea de código se presenta el diseño visual completo (wireframes y maqueta en Figma) para aprobación. Solo se avanza con luz verde del cliente. Si tras las rondas de retroalimentación incluidas aún no estás satisfecho, se reembolsa el 50% del anticipo. En más de 4 años de trabajo, nunca ha habido un cliente insatisfecho."
       }
     }
   ]
@@ -252,41 +252,41 @@ export default function PreciosPage() {
             <div className="space-y-6">
               {/* FAQ 1 */}
               <div className="bg-sand/30 p-6 rounded-2xl">
-                <h3 className="font-bold text-lg text-forest mb-2">¿Por qué debería contratar una agencia de diseño web a medida en lugar de usar un creador de páginas web genérico como WordPress o Wix?</h3>
+                <h3 className="font-bold text-lg text-forest mb-2">¿Cuánto cuesta una página web para restaurante en México en 2026?</h3>
                 <p className="text-text-secondary text-sm leading-relaxed">
-                  Los sistemas genéricos como WordPress, Wix o Squarespace añaden código basura innecesario, haciendo que tu sitio web sea lento y frustrante para tus clientes. Como <strong>agencia de diseño web</strong> a medida, desarrollamos soluciones exclusivas utilizando <strong>Next.js</strong> y <strong>Tailwind CSS</strong>. Esto nos permite construir código ultra-limpio de alto rendimiento. Para ti, esto se traduce en una velocidad de carga instantánea que retiene visitas y destruye las tasas de rebote en móviles, algo imposible de conseguir con un <strong>creador de páginas web</strong> tradicional.
+                  El precio va desde <strong>$8,500 MXN</strong> para una landing page de alto impacto, hasta <strong>$25,000 MXN</strong> o más para un e-commerce gastronómico completo. El precio siempre incluye diseño exclusivo, programación en Next.js y configuración SEO inicial. Sin cargos escondidos.
                 </p>
               </div>
               
               {/* FAQ 2 */}
               <div className="bg-sand/30 p-6 rounded-2xl">
-                <h3 className="font-bold text-lg text-forest mb-2">¿Por qué es crucial contar con páginas web en Mérida diseñadas específicamente para el mercado local?</h3>
+                <h3 className="font-bold text-lg text-forest mb-2">¿Se puede pagar en parcialidades o cuotas?</h3>
                 <p className="text-text-secondary text-sm leading-relaxed">
-                  El panorama empresarial en Yucatán está experimentando un crecimiento sin precedentes. Hoy en día, buscar <em>"paginas web merida"</em> arroja miles de competidores genéricos, pero muy pocos ofrecen una experiencia premium a medida. Contar con un sitio web diseñado localmente pero con estándares de calidad internacionales te posiciona instantáneamente por encima del 90% de la competencia local en Mérida. Google premia la relevancia geográfica y la excelente experiencia móvil, asegurando que tus clientes en zonas de alta plusvalía te encuentren en el primer segundo de búsqueda.
+                  Sí. El esquema estándar es <strong>50% al inicio</strong> para apartar fecha y comenzar el diseño, y el <strong>50% restante a la entrega</strong>. Para proyectos grandes se puede dividir en tres pagos. Se acepta transferencia, tarjeta de crédito y OXXO Pay.
                 </p>
               </div>
 
               {/* FAQ 3 */}
               <div className="bg-sand/30 p-6 rounded-2xl">
-                <h3 className="font-bold text-lg text-forest mb-2">¿Cuáles son las ventajas de sus páginas web de restaurantes y negocios de comida rápida en comparación con menús en PDF?</h3>
+                <h3 className="font-bold text-lg text-forest mb-2">¿El precio incluye hosting, dominio y correos corporativos?</h3>
                 <p className="text-text-secondary text-sm leading-relaxed">
-                  Obligar a un comensal con hambre a descargar un pesado archivo PDF en su celular es una de las mayores causas de pérdida de clientes en el sector gastronómico. Nuestras <strong>paginas web de restaurantes</strong> y negocios de comida rápida ofrecen menús interactivos, nativos y ultra-rápidos que se adaptan a cualquier pantalla de teléfono móvil. El cliente puede explorar los platillos, ver precios actualizados y reservar mesa en un solo clic, sin descargas. Además, un menú digital en HTML es rastreable por los motores de búsqueda, permitiendo que tu platillo estrella posicione en tu zona de reparto.
+                  El desarrollo se cotiza por separado del hosting. Los planes de <strong>Cuidado Web</strong> desde $1,500 MXN/mes incluyen hosting ultrarrápido en Vercel, dominio .com y correos corporativos con Google Workspace. Todo en una sola cuota mensual sin sorpresas.
                 </p>
               </div>
 
               {/* FAQ 4 */}
               <div className="bg-sand/30 p-6 rounded-2xl">
-                <h3 className="font-bold text-lg text-forest mb-2">¿Cuánto tiempo toma el desarrollo a medida y qué incluye su servicio de diseño web?</h3>
+                <h3 className="font-bold text-lg text-forest mb-2">¿Qué pasa si necesito cambios después de la entrega?</h3>
                 <p className="text-text-secondary text-sm leading-relaxed">
-                  Un desarrollo a medida de alta calidad suele tomar entre 2 y 4 semanas, dependiendo de la complejidad y el alcance de las funcionalidades requeridas. A diferencia de un <strong>creador de páginas web</strong> automático, nuestro servicio incluye un proceso meticuloso: análisis inicial de marca, diseño de interfaz UX/UI exclusivo, programación nativa de alto rendimiento con <strong>Next.js</strong>, optimización de velocidad de carga móvil extrema, integración de analíticas avanzadas y configuración SEO técnica lista para indexar en Google.
+                  Tienes <strong>15 días de garantía</strong> para cualquier ajuste sin costo. Pasado ese periodo, los cambios menores se cobran a $400 MXN/hora, o están incluidos ilimitadamente en el plan de Cuidado Web mensual.
                 </p>
               </div>
 
               {/* FAQ 5 */}
               <div className="bg-sand/30 p-6 rounded-2xl">
-                <h3 className="font-bold text-lg text-forest mb-2">¿Sus páginas web están optimizadas para posicionamiento SEO desde el primer día?</h3>
+                <h3 className="font-bold text-lg text-forest mb-2">¿Hay garantía si no me gusta el resultado?</h3>
                 <p className="text-text-secondary text-sm leading-relaxed">
-                  Absolutamente. La mayoría de los desarrolladores entregan la web y después intentan "arreglar" el SEO. Nosotros construimos con SEO en el núcleo. Gracias a la tecnología de Server-Side Rendering (SSR) y generación estática de <strong>Next.js</strong>, Google no tiene que esperar a que el navegador de tus clientes cargue scripts pesados; lee la información de tu negocio inmediatamente. Entregamos sitios web con sitemaps automatizados, metadata optimizada e infraestructura de carga ultra veloz para que alcances las primeras posiciones en Google desde el lanzamiento.
+                  Sí. Antes de programar una sola línea de código presento el <strong>diseño visual completo en Figma</strong> para tu aprobación. Solo se avanza con tu visto bueno. Si tras las rondas de retroalimentación aún no estás satisfecho, se reembolsa el 50% del anticipo. En más de 4 años, nunca ha habido un cliente insatisfecho.
                 </p>
               </div>
             </div>

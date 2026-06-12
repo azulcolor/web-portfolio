@@ -3,11 +3,11 @@
 import { SITE_CONFIG } from "@/lib/constants";
 
 const footerLinks = [
-  { href: "#inicio", label: "Inicio" },
-  { href: "#sobre-mi", label: "Sobre mí" },
-  { href: "#proyectos", label: "Proyectos" },
-  { href: "#servicios", label: "Servicios" },
-  { href: "#contacto", label: "Contacto" },
+  { href: "/", label: "Inicio" },
+  { href: "/#proyectos", label: "Proyectos" },
+  { href: "/#servicios", label: "Servicios" },
+  { href: "/precios", label: "Precios" },
+  { href: "/diseno-web-merida", label: "Mérida" },
 ];
 
 export default function Footer() {
