@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Cormorant_Garamond, DM_Sans, Caveat } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import FloatingWhatsApp from "@/components/ui/FloatingWhatsApp";
 import "./globals.css";
 
 const cormorant = Cormorant_Garamond({
@@ -205,6 +206,7 @@ export default function RootLayout({
       </head>
       <body className="min-h-full flex flex-col overflow-x-hidden">
         {children}
+        <FloatingWhatsApp />
         <Analytics />
         <SpeedInsights />
       </body>

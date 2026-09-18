@@ -15,15 +15,15 @@ const Footer   = dynamic(() => import("@/components/sections/Footer"));
 
 
 export const metadata: Metadata = {
-  title: "Diseño Web para Restaurantes en Mérida | Eduardo Leal",
-  description: "Especialista en diseño de páginas web para restaurantes, cafeterías y marcas gastronómicas en Mérida, Yucatán. Aumenta tus reservaciones con una web premium que cargue al instante.",
+  title: "Diseño Web en Mérida | Páginas Premium para Restaurantes",
+  description: "Especialista en diseño web en Mérida, Yucatán. Aumenta tus reservaciones con una página premium, ultra rápida y enfocada en conseguirte más clientes. Cotiza hoy.",
   keywords: ["diseño web Mérida", "páginas web para restaurantes en Mérida", "agencia de diseño web en Mérida", "desarrollador web Mérida", "creación de páginas web Mérida Yucatán"],
   alternates: {
     canonical: "https://lealpastelin.com/diseno-web-merida",
   },
   openGraph: {
-    title: "Diseño Web para Restaurantes en Mérida | Eduardo Leal",
-    description: "Especialista en diseño de páginas web para restaurantes en Mérida. Aumenta tus reservaciones con una web premium.",
+    title: "Diseño Web en Mérida | Páginas Premium para Restaurantes",
+    description: "Especialista en diseño web en Mérida. Aumenta tus reservaciones con una web premium y ultra rápida.",
     url: "https://lealpastelin.com/diseno-web-merida",
   }
 };
