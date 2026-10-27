@@ -8,10 +8,10 @@ const meridaFaqSchema = {
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "¿Por qué los restaurantes en Mérida necesitan una página web profesional en 2026?",
+      "name": "¿Por qué las empresas y negocios en Mérida necesitan una página web profesional en 2026?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Mérida vive uno de los booms gastronómicos más importantes de México. Colonias como Altabrisa, Santa Ana, Temozón Norte y el corredor de Paseo de Montejo reciben a un perfil de comensal exigente que busca opciones en Google antes de salir de casa. Si tu restaurante no aparece con una web bonita, rápida y bien posicionada, tu competencia — que sí la tiene — se queda con esa reservación. En 2026, una web premium no es un lujo, es la diferencia entre estar lleno o no."
+        "text": "Mérida vive una expansión económica y comercial sin precedentes. Colonias como Altabrisa, Montejo, Temozón Norte, Santa Gertrudis Copó y las zonas industriales reciben clientes e inversionistas exigentes que buscan en Google antes de tomar decisiones. Si tu empresa o negocio no aparece con una web rápida, moderna y bien posicionada, tu competencia se queda con esos clientes. En 2026, una web profesional es la principal herramienta de credibilidad y ventas para cualquier negocio serio en Yucatán."
       }
     },
     {
@@ -19,31 +19,31 @@ const meridaFaqSchema = {
       "name": "¿Qué zonas y colonias de Mérida atiende Eduardo Leal?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Se trabaja con negocios de toda la ciudad de Mérida y área metropolitana: Altabrisa, Norte, Santa Gertrudis Copó, Temozón, Cholul, Dzitya, Centro Histórico, Itzimná, García Ginerés, Francisco de Montejo y municipios cercanos como Progreso, Valladolid, Izamal y Tizimín. Al ser un desarrollador freelance local con base en Yucatán, se pueden hacer reuniones presenciales para revisar avances y hacer el lanzamiento juntos."
+        "text": "Trabajo con empresas, clínicas, comercios y marcas de toda la ciudad de Mérida y su zona metropolitana: Altabrisa, Temozón Norte, Cholul, Centro Histórico, García Ginerés, Itzimná, Francisco de Montejo, Parque Industrial Yucatán y municipios cercanos como Progreso, Valladolid e Izamal. Al radicar localmente en Yucatán, podemos tener reuniones presenciales para planificar tu proyecto y revisar avances."
       }
     },
     {
       "@type": "Question",
-      "name": "¿Cuánto tarda en aparecer mi restaurante en Google Maps y búsquedas locales de Mérida?",
+      "name": "¿Cuánto tarda en posicionar mi sitio web en Google y Google Maps en Mérida?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Con la web lista y bien configurada, Google puede indexar tu negocio en 48 a 72 horas. Sin embargo, para aparecer en las primeras posiciones de búsquedas como 'restaurantes en Mérida' o 'cena romántica Altabrisa Mérida', se necesita también optimizar tu perfil de Google Business Profile, tener reseñas positivas y construir autoridad local de forma gradual. La combinación de una web veloz en Next.js + Google Business Profile optimizado es la fórmula que mejor funciona en el mercado yucateco actualmente."
+        "text": "La indexación técnica inicial toma entre 48 y 72 horas. Para empezar a ganar posiciones en los primeros resultados locales de Mérida (como 'diseño web Mérida' o servicios específicos de tu sector), los primeros resultados sólidos se observan entre los 30 y 90 días, combinando un sitio ultra veloz en Next.js con una ficha optimizada de Google Business Profile y buenas reseñas."
       }
     },
     {
       "@type": "Question",
-      "name": "¿Puede mi web de restaurante integrarse con plataformas de reservaciones o pedidos a domicilio?",
+      "name": "¿Qué diferencia hay entre una web hecha a medida con Next.js vs una plantilla de WordPress o Wix?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Sí. Se pueden integrar sistemas de reservaciones como OpenTable, Resy o formularios propios de reserva con confirmación por WhatsApp. Para pedidos a domicilio, la web puede conectarse con tu catálogo propio o redirigir de forma inteligente a tu tienda en Rappi o UberEats según la disponibilidad horaria. El objetivo es que la web de tu restaurante sea el centro de tu ecosistema digital, no solo una tarjeta de presentación."
+        "text": "Las plantillas de WordPress y Wix vienen sobrecargadas con código innecesario, plugins lentos y fallas de seguridad constantes que hacen que tu sitio tarde más de 4 segundos en cargar (lo que castiga tu posicionamiento en Google y duplica el rebote de clientes en celulares). Una web programada a medida con Next.js carga en menos de 1.2 segundos, es 100% segura, escala sin romperse y está optimizada a nivel de servidor para que Google la priorice."
       }
     },
     {
       "@type": "Question",
-      "name": "¿Vale la pena invertir en una web de restaurante si ya tengo muchos seguidores en Instagram?",
+      "name": "¿Vale la pena tener una web si mi negocio ya tiene seguidores en Instagram o Facebook?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Instagram y una web son complementarios, no competencia. Instagram es excelente para inspirar y crear comunidad, pero Google es donde los clientes van cuando ya quieren comer. Si alguien busca 'sushi en Mérida' o 'brunch Paseo de Montejo', Instagram no aparece en esos resultados — tu web sí. Además, una web propia no depende del algoritmo de ninguna red social: es tuya, siempre visible, y funciona las 24 horas capturando clientes que de otra forma se irían con tu competencia."
+        "text": "Las redes sociales y tu sitio web cumplen funciones distintas. Las redes sociales generan atención, pero Google es donde la gente busca cuando ya tiene una necesidad urgente y la intención de contratar o comprar. Si alguien busca en Google tu servicio en Mérida, tus publicaciones de Instagram no van a aparecer; tu página web sí. Además, en tu propia web no dependes de cambios de algoritmo ni de publicidad pagada constante para que te encuentren."
       }
     }
   ]
@@ -51,24 +51,24 @@ const meridaFaqSchema = {
 
 const MERIDA_FAQS = [
   {
-    question: "¿Por qué los restaurantes en Mérida necesitan una página web profesional en 2026?",
-    answer: "Mérida vive uno de los booms gastronómicos más importantes de México. Colonias como Altabrisa, Santa Ana, Temozón Norte y Paseo de Montejo reciben a un comensal que busca opciones en Google antes de salir de casa. Si tu restaurante no aparece con una web bonita, rápida y bien posicionada, tu competencia — que sí la tiene — se queda con esa reservación. En 2026, una web premium es la diferencia entre estar lleno o no.",
+    question: "¿Por qué las empresas y negocios en Mérida necesitan una página web profesional en 2026?",
+    answer: "Mérida vive una expansión económica y comercial sin precedentes. Colonias como Altabrisa, Montejo, Temozón Norte, Santa Gertrudis Copó y zonas industriales reciben clientes e inversionistas exigentes que buscan en Google antes de tomar decisiones. Si tu negocio no aparece con una web rápida, moderna y bien posicionada, tu competencia se queda con esos clientes.",
   },
   {
-    question: "¿Qué zonas de Mérida atiende Eduardo Leal?",
-    answer: "Trabajo con negocios de toda la ciudad: Altabrisa, Norte, Santa Gertrudis Copó, Temozón, Cholul, Centro Histórico, Itzimná, García Ginerés y municipios como Progreso, Valladolid e Izamal. Al ser local en Yucatán, podemos hacer reuniones presenciales para revisar avances y hacer el lanzamiento juntos.",
+    question: "¿Qué zonas y colonias de Mérida atiende Eduardo Leal?",
+    answer: "Trabajo con empresas, clínicas, restaurantes y marcas de toda la ciudad de Mérida y zona metropolitana: Altabrisa, Temozón Norte, Cholul, Centro Histórico, García Ginerés, Itzimná, Francisco de Montejo y municipios cercanos como Progreso o Valladolid. Al radicar en Yucatán, podemos reunirnos presencialmente para planificar tu proyecto.",
   },
   {
-    question: "¿Cuánto tarda en aparecer mi restaurante en búsquedas locales de Mérida?",
-    answer: "Con la web lista y bien configurada, Google puede indexar tu negocio en 48 a 72 horas. Para aparecer en primeras posiciones de búsquedas como 'restaurantes en Mérida' o 'cena romántica Altabrisa', también se necesita optimizar tu Google Business Profile y construir autoridad local. La combinación Next.js + GBP optimizado es la fórmula que mejor funciona en Yucatán actualmente.",
+    question: "¿Cuánto tarda en posicionar mi sitio web en Google y Google Maps en Mérida?",
+    answer: "La indexación inicial toma entre 48 y 72 horas. Para escalar a las primeras posiciones en búsquedas locales de Mérida, el trabajo de SEO técnico en Next.js sumado a una ficha optimizada en Google Business Profile comienza a dar resultados sólidos entre los 30 y 90 días.",
   },
   {
-    question: "¿Puede mi web integrar reservaciones y pedidos a domicilio?",
-    answer: "Sí. Puedo integrar sistemas como OpenTable, Resy o formularios propios con confirmación por WhatsApp. Para pedidos a domicilio, la web puede conectarse con tu catálogo propio o redirigir inteligentemente a Rappi o UberEats según horario. El objetivo es que tu web sea el centro de tu ecosistema digital, no solo una tarjeta de presentación.",
+    question: "¿Qué diferencia hay entre una web hecha a medida vs una plantilla de WordPress o Wix?",
+    answer: "Las plantillas de WordPress y Wix arrastran decenas de plugins pesados que hacen que tu página tarde más de 4 segundos en cargar en celular, perdiendo más de la mitad de tus visitas. Desarrollar a medida con Next.js garantiza tiempos de carga inferiores a 1.2 segundos, máxima seguridad y un rendimiento que Google premia.",
   },
   {
-    question: "¿Vale la pena invertir en una web si ya tengo muchos seguidores en Instagram?",
-    answer: "Instagram y tu web son complementarios. Instagram inspira y crea comunidad, pero Google es donde los clientes van cuando ya quieren comer. Si alguien busca 'sushi en Mérida' o 'brunch Paseo de Montejo', Instagram no aparece — tu web sí. Además, tu web no depende del algoritmo de nadie: es tuya, siempre visible, captando clientes las 24 horas.",
+    question: "¿Vale la pena tener una web si mi negocio ya tiene seguidores en redes sociales?",
+    answer: "Las redes sociales inspiran, pero Google es el lugar al que van los clientes cuando ya están listos para cotizar y comprar. Una web propia te da autoridad inmediata, funciona 24/7 capturando prospectos y no depende de los caprichos del algoritmo de Instagram ni de pagar anuncios eternamente.",
   },
 ];
 
@@ -88,12 +88,12 @@ export default function MeridaFaq() {
       </div>
       <div className="max-w-4xl mx-auto px-6 relative z-10">
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <span className="font-accent text-2xl text-forest inline-block mb-3">Tus dudas sobre Mérida</span>
+          <span className="font-accent text-2xl text-forest inline-block mb-3">Resolviendo tus dudas</span>
           <h2 className="font-display text-4xl md:text-5xl font-bold text-charcoal-light leading-tight">
             Preguntas Frecuentes
           </h2>
           <p className="text-text-secondary text-sm md:text-base mt-4">
-            Todo lo que necesitas saber sobre diseño web para el mercado gastronómico de Mérida, Yucatán.
+            Todo lo que necesitas saber sobre diseño y desarrollo web para empresas y negocios en Mérida, Yucatán.
           </p>
         </div>
         <div className="space-y-4">

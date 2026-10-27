@@ -3,6 +3,7 @@ import dynamic from "next/dynamic";
 import Navbar from "@/components/sections/Navbar";
 import { HeroAnimations } from "@/components/animations/HeroAnimations";
 import CtaButtons from "@/components/hero/CtaButtons";
+import AuditBanner from "@/components/sections/AuditBanner";
 import MeridaFaq from "@/components/sections/MeridaFaq";
 
 const Projects = dynamic(() => import("@/components/sections/Projects"));
@@ -12,18 +13,25 @@ const Testimonials = dynamic(() => import("@/components/sections/Testimonials"))
 const Contact  = dynamic(() => import("@/components/sections/Contact"));
 const Footer   = dynamic(() => import("@/components/sections/Footer"));
 
-
-
 export const metadata: Metadata = {
-  title: "Diseño Web en Mérida | Páginas Premium para Restaurantes",
-  description: "Especialista en diseño web en Mérida, Yucatán. Aumenta tus reservaciones con una página premium, ultra rápida y enfocada en conseguirte más clientes. Cotiza hoy.",
-  keywords: ["diseño web Mérida", "páginas web para restaurantes en Mérida", "agencia de diseño web en Mérida", "desarrollador web Mérida", "creación de páginas web Mérida Yucatán"],
+  title: "Diseño Web en Mérida | Páginas Web de Alto Rendimiento",
+  description: "Especialista en diseño y desarrollo web en Mérida, Yucatán. Sitios web ultrarrápidos, optimizados para SEO y enfocados en convertir visitas en clientes para tu negocio en Mérida. Cotiza hoy.",
+  keywords: [
+    "diseño web Mérida",
+    "desarrollo web Mérida",
+    "páginas web Mérida",
+    "creación de páginas web Mérida Yucatán",
+    "programador web Mérida",
+    "agencia de diseño web en Mérida",
+    "desarrollador freelance Mérida",
+    "diseño de páginas web Mérida"
+  ],
   alternates: {
     canonical: "https://lealpastelin.com/diseno-web-merida",
   },
   openGraph: {
-    title: "Diseño Web en Mérida | Páginas Premium para Restaurantes",
-    description: "Especialista en diseño web en Mérida. Aumenta tus reservaciones con una web premium y ultra rápida.",
+    title: "Diseño Web en Mérida | Páginas Web de Alto Rendimiento",
+    description: "Especialista en diseño y desarrollo web en Mérida, Yucatán. Sitios web ultrarrápidos y enfocados en convertir visitas en clientes.",
     url: "https://lealpastelin.com/diseno-web-merida",
   }
 };
@@ -44,16 +52,16 @@ export default function DisenoWebMerida() {
 
           <div className="max-w-7xl mx-auto px-6 text-center relative z-10 animate-fade-in opacity-100">
             <span className="font-accent text-2xl md:text-3xl text-forest inline-block mb-4">
-              Especialista web en Mérida, Yuc. 🌿
+              Desarrollador web en Mérida, Yuc. 🌿
             </span>
 
             <h1 className="font-display text-5xl sm:text-6xl md:text-7xl font-bold leading-[1.1] tracking-tight text-charcoal-light mb-6">
-              Diseño Web Premium para <br className="hidden sm:block" />
-              <span className="text-forest">Restaurantes en Mérida</span>
+              Diseño y Desarrollo Web <br className="hidden sm:block" />
+              <span className="text-forest">de Alto Rendimiento en Mérida</span>
             </h1>
 
-            <p className="max-w-2xl mx-auto text-lg md:text-xl text-text-secondary leading-relaxed mb-10">
-              ¿Tu local está increíble en Paseo de Montejo, Altabrisa o Temozón, pero tu menú web tarda en cargar? En medio del boom gastronómico yucateco, un PDF ya no es suficiente. Creo experiencias digitales nativas y ultra rápidas que transforman visitas en reservaciones.
+            <p className="max-w-3xl mx-auto text-lg md:text-xl text-text-secondary leading-relaxed mb-10">
+              ¿Tu empresa, clínica o negocio está en Mérida y tu página actual tarda en cargar o no te genera prospectos? Creo sitios web ultrarrápidos y a medida para marcas en Yucatán. Cero plantillas lentas de WordPress: código limpio enfocado en posicionar en Google y convertir visitas en cotizaciones.
             </p>
 
             <CtaButtons />
@@ -70,7 +78,7 @@ export default function DisenoWebMerida() {
               <div className="hidden sm:block w-px h-10 bg-caramel/30" />
               <div className="text-center">
                 <span className="font-display text-3xl md:text-4xl font-bold text-forest">
-                  {'< 2s'}
+                  {'< 1.2s'}
                 </span>
                 <p className="text-sm text-text-muted mt-1">
                   Velocidad de carga
@@ -82,14 +90,17 @@ export default function DisenoWebMerida() {
                   Local
                 </span>
                 <p className="text-sm text-text-muted mt-1">
-                  Soporte presencial
+                  Soporte presencial en Mérida
                 </p>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Mantenemos el resto de las secciones que ya venden tu trabajo perfectamente */}
+        {/* Lead Magnet Banner: Video Auditoría */}
+        <AuditBanner />
+
+        {/* Portafolio de proyectos */}
         <Projects />
         <Services />
 
@@ -99,7 +110,7 @@ export default function DisenoWebMerida() {
             <div className="text-center max-w-3xl mx-auto mb-16 animate-fade-in">
               <span className="font-accent text-xl text-forest inline-block mb-3">Tecnología de Vanguardia</span>
               <h2 className="font-display text-3xl md:text-4xl font-bold text-charcoal-light leading-tight">
-                ¿Por qué una web hecha a código es superior?
+                ¿Por qué una web hecha a código es superior para tu negocio?
               </h2>
             </div>
             
@@ -108,9 +119,9 @@ export default function DisenoWebMerida() {
               <div className="bg-white p-8 rounded-3xl border border-sand shadow-[0_4px_20px_rgba(0,0,0,0.02)] flex flex-col justify-between">
                 <div>
                   <div className="w-12 h-12 rounded-2xl bg-forest/10 text-forest flex items-center justify-center font-display text-xl font-bold mb-6">⚡</div>
-                  <h3 className="font-display text-xl font-bold text-charcoal-light mb-3">Velocidad instantánea: A la velocidad del pensamiento.</h3>
+                  <h3 className="font-display text-xl font-bold text-charcoal-light mb-3">Velocidad instantánea: Menos de 1.2 segundos.</h3>
                   <p className="text-text-secondary text-sm leading-relaxed">
-                    En móviles, cada segundo de carga cuesta un 20% en conversiones. Al eliminar el peso y el desorden de los creadores de páginas genéricos, tu sitio web se despliega en menos de 1.2 segundos. Si tu página no es instantánea, tu cliente potencial ya está comprando en el restaurante de al lado.
+                    En dispositivos móviles, cada segundo de espera cuesta un 20% en conversiones. Al eliminar plugins pesados y el desorden de los creadores genéricos, tu sitio web se despliega al instante. Si tu página tarda, tu cliente potencial ya está cotizando con tu competencia directa en Mérida.
                   </p>
                 </div>
               </div>
@@ -119,9 +130,9 @@ export default function DisenoWebMerida() {
               <div className="bg-white p-8 rounded-3xl border border-sand shadow-[0_4px_20px_rgba(0,0,0,0.02)] flex flex-col justify-between">
                 <div>
                   <div className="w-12 h-12 rounded-2xl bg-caramel/10 text-caramel flex items-center justify-center font-display text-xl font-bold mb-6">🎨</div>
-                  <h3 className="font-display text-xl font-bold text-charcoal-light mb-3">Código limpio construido con Tailwind CSS.</h3>
+                  <h3 className="font-display text-xl font-bold text-charcoal-light mb-3">Diseño premium construido con Tailwind CSS.</h3>
                   <p className="text-text-secondary text-sm leading-relaxed">
-                    Mientras las plantillas de WordPress arrastran toneladas de estilos genéricos que nunca usarás, nosotros pintamos cada elemento a mano utilizando el framework más eficiente del mercado. El resultado es un diseño exquisitamente premium, infinitamente escalable y sumamente liviano.
+                    Mientras las plantillas de WordPress arrastran toneladas de estilos que nunca usarás, programamos cada vista a medida. El resultado es una interfaz limpia, moderna y estética que transmite confianza y autoridad inmediata a quien te visita.
                   </p>
                 </div>
               </div>
@@ -132,7 +143,7 @@ export default function DisenoWebMerida() {
                   <div className="w-12 h-12 rounded-2xl bg-mint/20 text-forest flex items-center justify-center font-display text-xl font-bold mb-6">📈</div>
                   <h3 className="font-display text-xl font-bold text-charcoal-light mb-3">Next.js SSR: Conquista los primeros puestos de Google.</h3>
                   <p className="text-text-secondary text-sm leading-relaxed">
-                    No obligues a los motores de búsqueda a descifrar tu sitio. Con Next.js, tu contenido se genera directamente en el servidor y se sirve a Google en bandeja de plata. Posiciona de forma orgánica, atrae leads altamente calificados y olvídate de parches lentos de posicionamiento.
+                    No obligues a los motores de búsqueda a descifrar tu sitio. Con Next.js, tu contenido se genera directamente en el servidor y se sirve a Google optimizado. Posiciona orgánicamente para búsquedas de Mérida y atrae prospectos calificados las 24 horas.
                   </p>
                 </div>
               </div>
@@ -142,7 +153,7 @@ export default function DisenoWebMerida() {
         <Process />
         <Testimonials />
         
-        {/* Testimonio Local Mérida - Reemplazado por Invasivo */}
+        {/* Testimonio Local Mérida - Agencia Invasivo */}
         <section className="py-24 bg-forest/5 border-y border-forest/10">
           <div className="max-w-4xl mx-auto px-6 text-center">
             <span className="font-accent text-xl text-forest inline-block mb-4">Caso de Éxito en Mérida</span>
