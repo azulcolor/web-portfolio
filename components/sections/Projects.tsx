@@ -8,6 +8,7 @@ import { PROJECTS, type Project } from "@/lib/constants";
 
 const categories = [
   { id: "todos", label: "Todos" },
+  { id: "industrial", label: "Industrial" },
   { id: "restaurante", label: "Restaurantes" },
   { id: "ecommerce", label: "E-Commerce" },
   { id: "salud", label: "Salud" },

@@ -45,6 +45,21 @@ export const PROJECTS: Project[] = [
     featured: true,
     collaboration: "Desarrollo frontend en colaboración estratégica con Agencia Invasivo",
   },
+  {
+    id: "maico",
+    name: "MAICO Industrial",
+    client: "MAICO",
+    category: "industrial",
+    categoryLabel: "Automatización Industrial",
+    description:
+      "En MAICO desarrollamos soluciones de ingeniería para automatizar, fabricar, integrar y optimizar procesos industriales. Integramos automatización, fabricación de equipos, maquinados de precisión, sistemas eléctricos y suministro industrial de acuerdo con las necesidades de cada proyecto.",
+    impact:
+      "Plataforma web de ingeniería y automatización industrial en México con enfoque en captación B2B y cotización de proyectos.",
+    url: "https://maicoindustrial.com/",
+    image: "/images/projects/maico.webp",
+    technologies: ["Next.js", "Tailwind CSS", "TypeScript", "SEO"],
+    featured: true,
+  },
   // {
   //   id: "walter-vera",
   //   name: "Walter Vera",
